@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Estilos comunes para divs */
+
+
+a:link,a:visited,a:hover,a:active
+{
+	text-decoration:none;
+	color:#996600;
+}
+
+#header
+{
+	margin-left:20px;
+}
+
+.sloganContainer
+{
+	margin-left:170px;
+}
+
+body
+{
+	background-image:url(../images/labilbaina/panoramicBilbaina.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+aside
+{
+	border-left:dotted;
+	border-left-color:white;
+	margin: 75px 0px 0px 1000px;
+	width: 400px;
+	height: 500px;
+	float: left;
+	position:absolute;
+}
+
+#carousel
+{
+	border:solid;
+	border-color:white;
+	margin: 150px 0px 0px 100px;
+	width:100%;
+}
+
+/*capa que contiene foto de miniaturas */
+#thumbnailContainer
+{
+	width:220px;
+	margin: 10px 10px 0px 100px;
+	float:left;
+}
+
+#thumbnail
+{
+	border:solid;
+	height:150px;
+	border-color:white;
+	margin:10px 0px 10px 0px;
+	background-repeat: no-repeat;
+}
+
+
+footer
+{
+	border-top:solid;
+	border-color:#BCBCBC;
+	background-color:white;
+	height: 400px;
+	font-size:12px;
+	color:#000033;
+	margin: 800px 0px 0px 0px;
+	width: 100%;
+}
+
+.socialFooter
+{
+	margin: 30px 0px 0px 300px;
+	width: 200px;
+}
+
+.facebook
+{
+	float: right;
+	margin: 0px 10px 0px 0px;
+}
+
+.tripAdvisor
+{
+	float: right;
+	margin: 0px 10px 0px 0px;
+}
+
+.booking
+{
+	float: right;
+	margin: 0px 10px 0px 0px;
+}
+
+.googlePlus
+{
+	float: right;
+	margin: 0px 10px 0px 0px;
+}

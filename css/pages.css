@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Estilos especificos */
+
+/*INDEX*/
+
+.thumbnail_laBilbaina
+{
+	background-image:url(../images/thumbnails/laBilbaina.jpg);
+}
+.thumnail_vegadeo
+{
+	background-image: url(../images/thumbnails/vegadeo.jpg);
+}
+
+.thumnail_experiences
+{
+	background-image:url(../images/thumbnails/experiences.jpg);
+}
+.thumnail_gallery
+{
+	background-image:url(../images/thumbnails/gallery.jpg);
+}
+
+.widgetMap
+{
+	margin: 0px 0px 0px 80px;
+}
+
+.widgetWeather
+{
+	margin: 50px 0px 0px 80px;
+}
+
+
+/*LA BILBAINA*/
+
+
+
+/*CONTACTO*/
+
+
+
+/*COMARCA*/
+
+
+
+/*EXPERIENCIAS*/
+
+
+
+/*GALERIA*/
+
+
+
+/*MONTAÑA*/
+
+
+
+/*PLAYA*/
+
+
+/*VEGADEO*/
+
+
+
+

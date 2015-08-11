@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+/* text Styles */
+
+.plainText
+{
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	color:#BCBCBC;
+	text-justify:auto;
+}
+
+.slogan
+{
+	font-size:50px;
+	font-family:'Nothing You Could Do', sans-serif;
+	font-weight:bolder;
+}
+
+.rotuloLogo
+{
+	color:#996600;
+	font-family: 'Cinzel Decorative', serif;
+	font-size:90px;
+	font-weight:900;
+	height:50px;
+}
+
+.rotuloMedio
+{
+	font-size:24px;
+	color:#996600;
+	font-weight:bolder;
+	font-family: 'Cinzel Decorative', serif;
+}
