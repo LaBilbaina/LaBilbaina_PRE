@@ -41,7 +41,7 @@ aside
 {
 	border:solid;
 	border-color:white;
-	margin: 50px 0px 0px 20px;
+	margin: 80px 0px 0px 20px;
 	width:95%;
 	align-content:center;
 }
@@ -86,6 +86,7 @@ footer
 {
 	z-index:1;
 	float:left;
+	margin: 0px 40px 0px 0px;
 }
 
 .socialFooter
@@ -100,8 +101,8 @@ footer
 #findUs
 {
 	margin-left: 50px;
-	width:200px;
-	
+	width:500px;
+	float:left;
 }
 
 .facebook
@@ -131,4 +132,11 @@ footer
 #copyright
 {
 	margin: 250px 0px 0px 20px;
+}
+
+#contactFooter
+{
+	margin: 50px 120px 0px 0px;
+	width: 300px;
+	float:right;
 }

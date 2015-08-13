@@ -7,7 +7,7 @@
 <title>Hotel La Bilbaina - Vegadeo</title>
 <link href="../css/text.css" rel="stylesheet" type="text/css">
 <link href="../css/pages.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do|Open+Sans:500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do|Open+Sans' rel='stylesheet' type='text/css'>
 <link href="../css/common.css" rel="stylesheet" type="text/css">
 <link href="../jQueryAssets/common" rel="stylesheet" type="text/css">
 <link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -110,48 +110,42 @@
 
 <footer>
 	<div id="webMap" class="treeLinks">
-    	<div id="footerLinks" >
-        	<ul type="none">
-            	<li>
-		        	<a href="index.html" target="_self"><span class="footerText">Home</span></a>
-                </li>
-            </ul>
+    	<div id="footerLinks">
+	        <div id="homeFooterLink">
+		       	<a href="index.html" target="_self"><span class="footerText">Home</span></a>
+        	</div>
         </div>
         <div id="footerLinks">
-        	<ul type="none">
-            	<li>
-                	<a href="labilbaina.html" target="_self"><span class="footerText">La Bilbaina</span></a>
-                </li>
-            </ul>
+        	<div id="labilbainaFooterLink">
+             	<a href="labilbaina.html" target="_self"><span class="footerText">La Bilbaina</span></a>
+            </div>
         </div>
         <div id="footerLinks">
-			<ul type="none">
-            	<li><a href="experiencias.html" target="_self"><span class="footerText">Experiencias</span></a></li>
-             	<li>
-                	<ul type="none" class="footerTextMenor">
-                    	<li><a href="playa.html" target="_self">Playas</a></li>
-                        <li><a href="montana.html" target="_self">Montaña</a></li>
-                        <li><a href="comarca.html" target="_self">Comarca Oscos-Eo</a></li>
-                    </ul>
-                </li>
-            </ul>
+	       	<div id="experiencesFooterLink">
+           		<a href="experiencias.html" target="_self"><span class="footerText">Experiencias</span></a>
+			</div>
+            <div>&nbsp;</div>
+            <div id="experiencesMiniLinks" class="footerTextMenor">
+              	<a href="playa.html" target="_self">Playas</a><br />
+                <a href="montana.html" target="_self">Montaña</a><br />
+                <a href="comarca.html" target="_self">Comarca Oscos-Eo</a>
+	        </div>
         </div>
         <div id="footerLinks">
-        	<ul type="none">
-            	<li><a href="galeria.html" target="_self"><span class="footerText">Galeria</span></a></li>
-                <li>
-                	<ul type="none" class="footerTextMenor">
-                    	<li><a href="elhotel.html" target="_self">El hotel</a></li>
-                        <li><a href="habitaciones.html" target="_self">Habitaciones</a></li>
-                        <li><a href="vegadeo.html" target="_self">Vegadeo</a></li>
-                    </ul>
-                </li>
-            </ul>
+        	<div id="galeriaFooterLink">
+            	<a href="galeria.html" target="_self"><span class="footerText">Galeria</span></a>
+            </div>
+            <div>&nbsp;</div>
+            <div id="galeriaMiniLinks" class="footerTextMenor">
+				<a href="elhotel.html" target="_self">El hotel</a><br />
+				<a href="habitaciones.html" target="_self">Habitaciones</a><br />
+                <a href="vegadeo.html" target="_self">Vegadeo</a>
+             </div>
         </div>
         <div id="footerLinks">
-        	<ul type="none">
-				<li><a href="contacto.html" target="_self"><span class="footerText">Contacto</span></a></li>
-            </ul>
+        	<div id="contactFooterLink">
+				<a href="contacto.html" target="_self"><span class="footerText">Contacto</span></a>
+            </div>
         </div>
     </div>
     
@@ -163,8 +157,18 @@
   		<div id="googlePlus" class="googlePlus"> <img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/> </div>
 	</div>
     
+    <div id="contactFooter" class="footerText">
+		Hotel La Bilbaina <br />
+        <span class="footerTextMenor">
+        	Plaza del ayuntamiento 6, Vegadeo<br />
+        	Asturias.<br />
+        	Teléfono: 985 634 035
+        	info@hotellabilbaina.es
+        </span>
+    </div>
+    
     <div id="copyright">
-		<span class="footer">Hotel La Bilbaina - Vegadeo. Todos los derechos reservados 2015 (C).</span>
+		<span class="footerTextMenor">Hotel La Bilbaina - Vegadeo. Todos los derechos reservados 2015 (C).</span>
     </div>
 </footer>
 

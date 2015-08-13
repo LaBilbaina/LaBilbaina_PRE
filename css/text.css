@@ -51,5 +51,6 @@ a:link,a:visited,a:hover,a:active
 .footerTextMenor
 {
 	font-size:12px;
-	color:#BCBCBC;
+	font-weight:300;
+	color:#996600;
 }
