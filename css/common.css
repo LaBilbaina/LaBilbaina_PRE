@@ -25,6 +25,11 @@ body
 	background-attachment:fixed;
 }
 
+breadCrumb
+{
+	margin: 0px 0px 0px 0px;
+}
+
 aside
 {
 	border-left:dotted;
@@ -90,8 +95,7 @@ footer
 
 .socialFooter
 {
-	margin-top:20px;
-	margin-right:20px;
+	margin: 20px 130px 0px 0px;
 	width: 450px;
 	float:right;
 	z-index:2;
@@ -99,7 +103,7 @@ footer
 
 #findUs
 {
-	margin-left: 50px;
+	margin-left: 190px;
 	width:500px;
 	float:left;
 }
@@ -135,7 +139,7 @@ footer
 
 #contactFooter
 {
-	margin: 50px 120px 0px 0px;
+	margin: 50px 90px 0px 0px;
 	width: 300px;
 	float:right;
 }
