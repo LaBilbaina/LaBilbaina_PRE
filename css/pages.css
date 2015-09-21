@@ -43,7 +43,16 @@
 
 /*COMARCA*/
 
-
+.initialParragraph
+{
+	padding-top: 350px;
+	padding-bottom:50px;
+	width: 100%;
+	background: #333537;
+	color: #ffffff;
+	text-align: center;
+}
+.initialParragraph p { padding-bottom: 10px; }
 
 /*EXPERIENCIAS*/
 

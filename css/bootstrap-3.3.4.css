@@ -4602,10 +4602,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb > li {
   display: inline-block;
+  margin-left:30px;
 }
 .breadcrumb > li + li:before {
-  padding: 0 5px;
+  padding: 0px 5px;
   color: #ccc;
+  margin-left: -25px;
   content: "/\00a0";
 }
 .breadcrumb > .active {
