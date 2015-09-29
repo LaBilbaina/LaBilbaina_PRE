@@ -54,9 +54,82 @@
 }
 .initialParragraph p { padding-bottom: 10px; }
 
+.thumbnailPlaya
+{
+	background-image:url(../images/playa/playaTapia.jpg);
+	width:100%;
+	height:200px;
+}
+
+.thumbnailMontana
+{
+	background-image:url(../images/montana/river_cascade.jpg);
+	width:100%;
+	height:200px;
+}
+
+.thumbnailVegadeo
+{
+	background-image:url(../images/vegadeo/pic_02g-A.jpg);
+	width:100%;
+	height:200px;
+}
+
+.thumbnailComarca
+{
+	background-image:url(../images/comarca/sailingEo.jpg);
+	width:100%;
+	height:200px;
+}
+
+.linkPlayas
+{
+	width:300px;
+	height:500px;
+	margin-left:200px;
+	float:left;
+}
+
+.linkMontana
+{
+	width:300px;
+	height:150px;
+	margin-left:30px;
+	float: left;	
+}
+
+.linkVegadeo
+{
+	width:300px;
+	height:150px;
+	margin-left:30px;
+	margin-right: 150px;
+	float: left;
+}
+
+.linkComarca
+{
+	width:300px;
+	height:150px;
+	margin-left:30px;
+	float: right;
+}
+
+
+.changeColor
+{
+	height:200px;
+	padding: 10px 10px 0px 10px;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.changeColor:hover
+{
+	background-color: rgba(255,254,254,0.6);
+}
 /*EXPERIENCIAS*/
-
-
 
 /*GALERIA*/
 

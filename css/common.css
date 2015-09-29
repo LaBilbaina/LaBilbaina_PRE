@@ -22,7 +22,7 @@ header
 /*Contenedor la barra de navegacion*/
 .mainMenuContainer{
 	margin: 5px 0px 0px 700px;
-	height:85px;
+	height:70px;
 	width:600px;
 }
 
@@ -94,7 +94,7 @@ header
 {
 	margin: 50px 0px 20px 900px;
 	width: 450px;
-	height:70px;
+	height:50px;
 }
 
 /*ESTILOS DEL BODY*/
@@ -116,9 +116,7 @@ body
 .centralText
 {
 	width:100%;
-	background-color:#333537;
-	opacity: 0.8;
-    filter: alpha(opacity=60);
+	background-color: rgba(47,47,48,0.8);
 	padding: 30px 30px 30px 30px;
 }
 
@@ -126,60 +124,9 @@ body
 .sections
 {
 	width:100%;
-	padding: 30px 30px 30px 30px;
+	height:600px;
+	padding: 70px 30px 0px 30px;
 	background-image:url(../images/experiencias/shipsWater.jpg);
-}
-
-.thumbnailPlaya
-{
-	background-image:url(../images/playa/playaTapia.jpg);
-}
-
-.thumbnailMontana
-{
-	background-image:url(../images/montana/river_cascade.jpg);
-}
-
-.thumbnailVegadeo
-{
-	background-image:url(../images/vegadeo/pic_02g-A.jpg);
-}
-
-.thumbnailComarca
-{
-	background-image:url(../images/comarca/sailingEo.jpg);
-}
-
-.linkPlayas
-{
-	width:50px;
-	height:150px;
-	margin-left:150px;
-	float: left;
-}
-
-.linkMontana
-{
-	width:50px;
-	height:150px;
-	margin-left:150px;
-	float: right;	
-}
-
-.linkVegadeo
-{
-	width:50px;
-	height:150px;
-	margin-left:150px;
-	float: right;
-}
-
-.linkComarca
-{
-	width:50px;
-	height:150px;
-	margin-left:150px;
-	float: right;
 }
 
 aside
