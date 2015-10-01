@@ -112,7 +112,7 @@
 	width:300px;
 	height:150px;
 	margin-left:30px;
-	float: right;
+	float: left;
 }
 
 
@@ -129,6 +129,11 @@
 {
 	background-color: rgba(255,254,254,0.6);
 }
+
+.fondoMedioComarca
+{
+	background-image:url(../images/experiencias/shipsWater.jpg);
+}
 /*EXPERIENCIAS*/
 
 /*GALERIA*/
@@ -137,13 +142,24 @@
 
 /*MONTAÑA*/
 
-
+.fondoMedioMontana
+{
+	background-image:url(../images/montana/wayWood.jpg);
+}
 
 /*PLAYA*/
 
+.fondoMedioPlaya
+{
+	background-image:url(../images/playa/lasCatedralesGrande.jpg);
+}
 
 /*VEGADEO*/
 
+.fondoMedioVegadeo
+{
+	background-image:url(../images/vegadeo/vegadeo1.jpg);
+}
 
 
 

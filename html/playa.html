@@ -1,10 +1,363 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Documento sin título</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hotel en Vegadeo La Bilbaina" /> 
+    <meta name="keywords" content="Hotel, vegadeo, bilbaina, hoteles en vegadeo, ribadeo, oscos, eo, comarca oscos-eo" />
+    <title>Hotel La Bilbaina - Las playas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/text.css" rel="stylesheet" type="text/css">
+    <link href="../css/pages.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="../jQueryAssets/common.js" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
+	<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="../jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
+    
+	
+	<link href="../css/sliderStyles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jssor.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.js"></script>
 </head>
 
 <body>
+
+<header>
+    <div class="titleAndSlogan">
+        <div class="logo">
+            <h1><span class="rotuloLogo">La Bilbaína</span></h1>
+            <div class="sloganContainer">
+                <span class="slogan">Tu hotel en Vegadeo</span>
+            </div>
+      </div>
+    </div>
+    <div class="mainMenuContainer">
+        <div id="top-menu">
+            <nav class="mainMenu">
+                <ul class="nav">
+                    <li><a class="menu" href="index.html">Home</a></li>
+                    <li><a class="menu" href="labilbaina.html">La Bilbaina</a></li>
+                    <li><a class="menu" href="experiencias.html">Experiencias</a></li>
+                    <li><a class="menu" href="galeria.html">Galeria</a></li>
+                    <li><a class="menu" href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="socialH" class="socialHeader">
+        <div class="	facebook"><img src="../content/images/social/facebook.png" width="130" height="40" alt=""/></div>
+        <div class="tripAdvisor"><img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/></div>
+        <div class="googlePlus"><img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/></div>
+    </div>
+    <nav>
+        <div id="breadCrumb">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li class="active">Las playas</li>
+            </ol>
+        </div>
+    </nav>
+</header>
+
+<!-- TITULO -->
+<section>
+    <div class="initialParragraph">
+        <div class="clear"></div>
+        <h1>Las Playas</h1>
+        <div class="clear"></div>
+        <p>El Mar Cantábrico en su esplendor.</p>
+    </div>
+</section>
+
+<div class="clear"></div>
+
+<!-- LAS PLAYAS EN GENERAL -->
+<section class="centralText">
+        <img src="../images/playa/playaTapia.jpg" style="padding:10px 10px 10px 10px; float:right;" alt="playa de las catedrales"><span class="plainTextWhitePlus">Nos enontramos con uno de los atractivos turísticos más importantes de la zona, sobre todo en épica estival; las playas. El <strong>Mar Cantábrico</strong> de bravura innegable, esculpe la roca creando maravillas naturales como la <strong>PLaya de las Catedrales</strong>, o amasando grandes arenales como la playa de Tapia de Casariego, nuestra ubicación privilegiada, próxima a la costa, te permitirá disfrutar de muchas de las playas del occidente asturiano. ¿A qué estás esperando?</span>
+    
+</section>
+
+<!--SLIDER -->
+<section>          
+    <div id="sliderContainer" style="padding-top:0px">
+    
+        <script>
+            jQuery(document).ready(function ($) {
+                //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
+                //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+    
+                var _SlideshowTransitions = [
+                //Swing Outside in Stairs
+                {$Duration: 1200, x: 0.2, y: -0.1, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 1.3, $Top: 2.5} }
+    
+                //Dodge Dance Outside out Stairs
+                , { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.1, 0.9], $Top: [0.1, 0.9] }, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
+    
+                //Dodge Pet Outside in Stairs
+                , { $Duration: 1500, x: 0.2, y: -0.1, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
+    
+                //Dodge Dance Outside in Random
+                , { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 80, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
+    
+                //Flutter out Wind
+                , { $Duration: 1800, x: 1, y: 0.2, $Delay: 30, $Cols: 10, $Rows: 5, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $Reverse: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 2050, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseOutWave, $Clip: $JssorEasing$.$EaseInOutQuad }, $Outside: true, $Round: { $Top: 1.3} }
+    
+                //Collapse Stairs
+                , { $Duration: 1200, $Delay: 30, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 2049, $Easing: $JssorEasing$.$EaseOutQuad }
+    
+                //Collapse Random
+                , { $Duration: 1000, $Delay: 80, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Easing: $JssorEasing$.$EaseOutQuad }
+    
+                //Vertical Chess Stripe
+                , { $Duration: 1000, y: -1, $Cols: 12, $Formation: $JssorSlideshowFormations$.$FormationStraight, $ChessMode: { $Column: 12} }
+    
+                //Extrude out Stripe
+                , { $Duration: 1000, x: -0.2, $Delay: 40, $Cols: 12, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInOutExpo, $Opacity: $JssorEasing$.$EaseInOutQuad }, $Opacity: 2, $Outside: true, $Round: { $Top: 0.5} }
+    
+                //Dominoes Stripe
+                , { $Duration: 2000, y: -1, $Delay: 60, $Cols: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Easing: $JssorEasing$.$EaseOutJump, $Round: { $Top: 1.5} }
+                ];
+    
+                var options = {
+                    $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                    $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                    $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                    $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+    
+                    $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                    $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                    $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                    //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                    //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                    $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                    $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                    $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                    $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                    $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                    $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+    
+                    $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                        $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                        $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                        $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                        $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                    },
+    
+                    $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                        $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                        $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                        $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                        $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                        $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                        $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                        $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    },
+    
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                        $ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    }
+                };
+    
+                var jssor_slider2 = new $JssorSlider$("slider2_container", options);
+    
+                //responsive code begin
+                //you can remove responsive code if you don't want the slider scales while window resizes
+                function ScaleSlider() {
+                    var parentWidth = jssor_slider2.$Elmt.parentNode.clientWidth;
+                    if (parentWidth)
+                        jssor_slider2.$ScaleWidth(Math.min(parentWidth, 600));
+                    else
+                        window.setTimeout(ScaleSlider, 30);
+                }
+    
+                ScaleSlider();
+    
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+    
+                //responsive code end
+            });
+        </script>
+        
+        <div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 100%; height: 300px;">
+    
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <!--<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                    background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>-->
+                <div style="position: absolute; display: block; background: url(..content/images/loading.gif) no-repeat center center;
+                    top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>
+            </div>
+    
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+                overflow: hidden;">
+                <div>
+                    <a u=image href="#"><img src="../images/comarca/landscape/01.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/comarca/landscape/02.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/comarca/landscape/03.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/comarca/landscape/05.jpg" /></a>
+                </div>
+            </div>
+            <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+            </span>
+            <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+        </div>
+        <!-- Jssor Slider End -->
+    </div>
+</section>
+
+<!-- PLAYA DE LAS CATEDRALES -->
+<section class="centralText">
+    <span class="plainTextWhitePlus">
+    	<span class="rotuloMedio">La Playa de Las Catedrales</span>
+        <p>&nbsp;</p>
+        
+        <img src="../images/playa/betweenCatedrales.JPG" style="padding:10px 10px 10px 10px; float:right;" alt="Las Catedrales">
+        Ubicada a unos diez mintuos en coche de <a href="index.html" target="_self">La Bilbaina</a>, es un monumento a las fuerzas de la naturaleza. La majestuosidad de la roca horadada por la fuerza del mar la convierte en un paisaje asombroso en cualquier época del año.
+        <p>&nbsp</p>
+        <strong>La Playa de las Catedrales</strong>, debe su nombre a las peculiares esculturas talladas en la roca por la fuerza del Mar Cantábrico, originalmente llamada Playa de Augas Santas, adopta este sobrenombre por el parecido de las citadas esculturas de roca con las catedrales góticas.
+        <br/>
+        <img src="../images/playa/catedrales.jpg" style="padding:10px 10px 10px 10px; float:right;" alt="Las Catedrales">
+        La zona está rodeada de otras pequeñas playas de arena blanca y oleaje moderado que en época estival son más apropiadas para el baño. Pero en general, este monumento de la naturaleza se encuentra siempre muy visitado, con lo que te recomendamos concertar previamente una reserva en nuestro hotel si tienes planeado hacer una visita a esta maravilla natural.</span>
+
+</section>
+
+<!-- LIKNS A OTRAS SECCIONES DENTRO DE EXPERIENCIAS -->
+<section class="sections fondoMedioPlaya">
+      <div id="laMontana" class="linkMontana">
+      	<h2><span class="rotuloMedio"><a href="montana.html" target="_self">La Montaña</a></span></h2>
+          <a href="montana.html" target="_self"><div id="imgLaMontana" class="thumbnailMontana"></div></a>
+          <p>&nbsp;</p>
+          <div class="changeColor">
+          <span class="plainText gold">La montaña asturiana, tan abrupta como majestuosa, es el máximo exponente del verde que nos da el nombre. Disfruta de las innumerables rutas que te acercarán a los rincones más espectaculares de toda la Cordillera Cantábrica.</span>
+          </div>
+      </div>
+      <div id="comarca" class="linkComarca">
+      	<h2><span class="rotuloMedio"><a href="comarca.html" target="_self">La Comarca Oscos-Eo</a></span></h2>
+          <a href="comarca.html" target="_self"><div id="imgComarca" class="thumbnailComarca"></div></a>
+          <p>&nbsp;</p>
+          <div class="changeColor">
+          <span class="plainText gold">Conoce un poco más de la Comarca Oscos-Eo, sus tradiciones, su cultura y su esencia, que inunda todos nuestros rincones. Aprovecha tu estancia con nosotros para conocer uno de los rincones más privilegiados de Asturias.</span>
+          </div>
+      </div>
+      <div id="vegadeo" class="linkVegadeo">
+      	<h2><span class="rotuloMedio"><a href="vegadeo.html" target="_self">Vegadeo</a></span></h2>
+        <a href="montana.html" target="_self"><div id="imgVegadeo" class="thumbnailVegadeo"></div></a>
+        <p>&nbsp;</p>
+        <div class="changeColor">
+          <span class="plainText gold">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio. </span>
+          </div>
+      </div>
+</section>
+
+<!-- PLAYAS CERCANAS  -->
+<section class="centralText">
+   	<span class="plainTextWhitePlus">
+   		<span class="rotuloMedio">Artesan&iacute;a</span>
+        <p>&nbsp;</p>
+		<img src="../images/comarca/navajas-taramundi.jpg" style=" padding:10px 10px 10px 10px; float: right;" alt="navajas de taramundi">
+            Conocidas en toda la región son las navajas y cuchillos de Taramundi, emblema no solo de la comarca sino también de toda Asturias. Su proceso de fabricación, pr&aacute;cticamente inalterada, conserva técnicas centenarias para trabajar el acero, aunque las nuevas técnicas se combinan con gran acierto en los talleres, dando lugar a curiosos diseños dignos de apreciar. A tal efecto existe el llamado <a href="http://www.taramundi.es/museo-de-la-cuchilleria" target="_blank"> Museo de la cuchillería </a>, donde el visitante podrá contemplar todos los procesos de fabricación de estas piezas centenarias.
+            <p>&nbsp;</p>
+            No podemos dejar esta sección sin hacer mención <a href="http://www.asturiasbiosfera.com/que-ver-en-asturias/telar-irene-villar" target="_blank">al antiguo telar de Santa Eulalia de Oscos</a>, donde ya desde hace un tiempo se están recuperando las antiguas técnicas de telar de la zona, para llevar a cabo la realización de alfombras, fulares, mantelerías... etc, siempre tratando de combinar un toque actual en us diseños con la tradici&oacute;n.
+            <img src="../images/comarca/pendientesQuiastolita.jpg" style="padding: 10px 10px 10px 10px; float: left;" alt="artesania en quiastolita">
+            <p>&nbsp;</p>
+            Otras artesanias en peligro de extici&Oacute;n que por ello merecen especial difusi&oacute;n son la cester&iacute;a, una t&eacute;cnica antigua para la fabricaci&oacute;n de cestos que conlleva la elecci&oacute;n por parte del artesano, de la madera, su posterior procesado en l&aacute;minas y el entretejido de las mismas, un proceso lento y laborioso que la industria ha arrinconado en las zonas m&aacute;s rurales de Asturias, siendo la Comarca Oscos Eo una de ellas.
+            <p>&nbsp;</p>
+      
+            Por &uacute;ltimo y no menos importante, cabe destacar que la Comarca Oscos EO dispone de uno de los yacimientos de quiastolita m&aacute;s importantes del país. Esta gema, es una variedad de la andalucita, aunque no en el sentido estricto, y era conocida por los peregrinos de la ruta de santiago como <i>lapis crucifer</i>, es decir, "piedra cruz" o "piedra de la cruz". En la actualidad nuestros artesanos elaboran piezas de gran belleza que se pueden apreciar por toda la comarca.
+    	</span>
+</section>
+
+<footer>
+	<div id="webMap" class="treeLinks">
+    	<div id="footerLinks">
+	        <div id="homeFooterLink">
+		       	<a href="index.html" target="_self"><span class="footerText">Home</span></a>
+        	</div>
+        </div>
+        <div id="footerLinks">
+        	<div id="labilbainaFooterLink">
+             	<a href="labilbaina.html" target="_self"><span class="footerText">La Bilbaina</span></a>
+            </div>
+        </div>
+        <div id="footerLinks">
+	       	<div id="experiencesFooterLink">
+           		<a href="experiencias.html" target="_self"><span class="footerText">Experiencias</span></a>
+			</div>
+            <div>&nbsp;</div>
+            <div id="experiencesMiniLinks" class="footerTextMenor">
+              	<a href="playa.html" target="_self">Playas</a><br />
+                <a href="montana.html" target="_self">Montaña</a><br />
+                <a href="comarca.html" target="_self">Comarca Oscos-Eo</a>
+	        </div>
+        </div>
+        <div id="footerLinks">
+        	<div id="galeriaFooterLink">
+            	<a href="galeria.html" target="_self"><span class="footerText">Galeria</span></a>
+            </div>
+            <div>&nbsp;</div>
+            <div id="galeriaMiniLinks" class="footerTextMenor">
+				<a href="elhotel.html" target="_self">El hotel</a><br />
+				<a href="habitaciones.html" target="_self">Habitaciones</a><br />
+                <a href="vegadeo.html" target="_self">Vegadeo</a>
+          </div>
+        </div>
+        <div id="footerLinks">
+        	<div id="contactFooterLink">
+				<a href="contacto.html" target="_self"><span class="footerText">Contacto</span></a>
+            </div>
+        </div>
+    </div>
+    
+  <div id="socialIconos" class="socialFooter">
+  		<div id="findUs"> <span class="footerText">Encu&eacute;ntranos en:</span> </div>
+  		<div id="facebook" class="facebook"> <img src="../content/images/social/facebook.png" width="130" height="40" alt=""/> </div>
+  		<div id="tripAdvisor" class="tripAdvisor"> <img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/> </div>
+  		
+  		<div id="googlePlus" class="googlePlus"> <img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/> </div>
+  </div>
+  <address>  
+      <div id="contactFooter" class="footerText">
+            Hotel La Bilbaina <br />
+            <span class="footerTextMenor">
+                Plaza del ayuntamiento 6, Vegadeo<br />
+                Asturias.<br />
+                Teléfono: 985 634 035
+                info@hotellabilbaina.es
+            </span>
+      </div>
+  </address>  
+    <div id="copyright">
+		<span class="footerTextMenor">Hotel La Bilbaina - Vegadeo. Todos los derechos reservados 2015 (C).</span>
+    </div>
+</footer>
+
 </body>
 </html>
+

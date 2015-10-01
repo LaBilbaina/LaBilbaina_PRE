@@ -10,13 +10,7 @@
 	text-justify:auto;
 }
 
-.plainTextBlack
-{
-	font-size:14px;
-	font-family: 'Open Sans', sans-serif;
-	color:Black;
-	text-justify:auto;
-}
+
 
 .plainTextWhitePlus
 {
@@ -25,6 +19,19 @@
 	font-family:'Open Sans';
 	text-justify:auto;
 	font-weight:50;
+}
+
+.black
+{
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	color:Black;
+	text-justify:auto;
+}
+
+.gold
+{
+	color:#996600;
 }
 
 .slogan
