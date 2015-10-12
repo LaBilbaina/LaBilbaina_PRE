@@ -54,51 +54,15 @@
 }
 .initialParragraph p { padding-bottom: 10px; }
 
-.thumbnailPlaya
-{
-	background-image:url(../images/playa/playaTapia.jpg);
-	width:100%;
-	height:200px;
-}
-
-.thumbnailMontana
-{
-	background-image:url(../images/montana/river_cascade.jpg);
-	width:100%;
-	height:200px;
-}
-
-.thumbnailVegadeo
-{
-	background-image:url(../images/vegadeo/pic_02g-A.jpg);
-	width:100%;
-	height:200px;
-}
-
-.thumbnailComarca
-{
-	background-image:url(../images/comarca/sailingEo.jpg);
-	width:100%;
-	height:200px;
-}
-
-.linkPlayas
+.linkLeft
 {
 	width:300px;
-	height:500px;
+	height:150px;
 	margin-left:200px;
 	float:left;
 }
 
-.linkMontana
-{
-	width:300px;
-	height:150px;
-	margin-left:30px;
-	float: left;	
-}
-
-.linkVegadeo
+.linkRight
 {
 	width:300px;
 	height:150px;
@@ -107,14 +71,13 @@
 	float: left;
 }
 
-.linkComarca
+.linkCenter
 {
 	width:300px;
 	height:150px;
 	margin-left:30px;
 	float: left;
 }
-
 
 .changeColor
 {
@@ -127,39 +90,94 @@
 }
 .changeColor:hover
 {
-	background-color: rgba(255,254,254,0.6);
+	background-color: rgba(255,254,254,0.8);
+	border-radius: 10px;
+	margin-top: 10px;
 }
 
 .fondoMedioComarca
 {
 	background-image:url(../images/experiencias/shipsWater.jpg);
+	background-repeat: no-repeat;
 }
 /*EXPERIENCIAS*/
-
-/*GALERIA*/
-
-
 
 /*MONTAÑA*/
 
 .fondoMedioMontana
 {
 	background-image:url(../images/montana/wayWood.jpg);
+	background-repeat: no-repeat;
 }
 
 /*PLAYA*/
 
 .fondoMedioPlaya
 {
-	background-image:url(../images/playa/lasCatedralesGrande.jpg);
+	background-image:url(../images/playa/lasCatedralesBig.jpg);
+	background-repeat: no-repeat;
 }
 
 /*VEGADEO*/
 
+#textoVegadeo
+{
+	width: 65%;
+	float:left;
+}
+
+#imagenVegadeo
+{
+	padding: 10px 10px 10px 20px;
+	float: right;
+}
+
+#textoHistoria
+{
+	float:left; 
+	width:60%;
+}
+
+#imagenHistoria
+{
+	padding: 10px 20px 10px 10px; 
+	float:left; 
+	margin-top:50px;
+}
+
+#textoCalendario
+{
+	width:65%;
+	float:left;
+}
+
+#imagenUpCalendario
+{
+	margin-top:100px;
+	width: 30%;
+	height: 270px;
+	float: right;
+}
+
+#imagenDownCalendario
+{
+	width: 30%;
+	height:250px;
+	float: right;
+	margin-top: 30px;
+}
+
 .fondoMedioVegadeo
 {
-	background-image:url(../images/vegadeo/vegadeo1.jpg);
+	background-image:url(../images/vegadeo/casitasColor.jpg);
+	background-repeat: no-repeat;
 }
+
+/*GALERIA*/
+
+
+
+
 
 
 

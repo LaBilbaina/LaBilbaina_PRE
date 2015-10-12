@@ -5,20 +5,17 @@
 .plainText
 {
 	font-size:14px;
-	font-family: 'Open Sans', sans-serif;
+	font-family:'Josefin Sans';
 	color:#BCBCBC;
-	text-justify:auto;
+	text-align: justify;
 }
-
-
 
 .plainTextWhitePlus
 {
-	font-size:16px;
-	color:#F9F9F9;
-	font-family:'Open Sans';
-	text-justify:auto;
-	font-weight:50;
+	font-size:19px;
+	color:#BFBFBF;
+	font-family: 'Josefin Sans';
+	text-align: justify;
 }
 
 .black
@@ -26,12 +23,19 @@
 	font-size:14px;
 	font-family: 'Open Sans', sans-serif;
 	color:Black;
-	text-justify:auto;
+	text-align: justify;
 }
 
-.gold
+.goldLinkSection
 {
 	color:#996600;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.white
+{
+	color:white;
 }
 
 .slogan
@@ -39,6 +43,25 @@
 	font-size:40px;
 	font-family:'Nothing You Could Do', sans-serif;
 	font-weight:bolder;
+}
+
+.sloganPlus
+{
+	font-size:70px;
+	color: rgba(150,150,150,1.00);
+}
+
+.sloganUnderText
+{
+	font-size:20px;
+	font-family: 'Syncopate';
+}
+
+/*Titulos de cada seccion*/
+.rotuloSecciones
+{
+	font-size:40px;
+	font-family: 'Syncopate';
 }
 
 .rotuloLogo
@@ -50,12 +73,29 @@
 	height:50px;
 }
 
-.rotuloMedio
+.rotuloMedioCincelGold
 {
 	font-size:25px;
 	color:#996600;
 	font-weight:bolder;
 	font-family: 'Cinzel Decorative', serif;
+}
+
+.rotuloMedioNothingGray
+{
+	color: #BFBFBF;
+	font-weight:bolder;	
+	font-family: 'Nothing You Could Do', sans-serif;
+	font-size:30px;
+}
+
+/*texto para pie de foto*/
+.underImage
+{
+	color:#996600;
+	font-family: 'Open Sans';
+	font-size:14px;
+	font-style:italic;
 }
 
 a:link,a:visited,a:hover,a:active
@@ -76,5 +116,11 @@ a:link,a:visited,a:hover,a:active
 {
 	font-size:12px;
 	font-weight:300;
+	color:#996600;
+}
+
+strong
+{
+	font-weight:200;
 	color:#996600;
 }
