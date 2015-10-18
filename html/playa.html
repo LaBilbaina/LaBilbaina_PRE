@@ -11,7 +11,7 @@
     <link href="../css/text.css" rel="stylesheet" type="text/css">
     <link href="../css/pages.css" rel="stylesheet" type="text/css">
     <link href="../css/common.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do:400,700|Open+Sans|Syncopate|Josefin+Sans:300' rel='stylesheet' type='text/css'>
     <link href="../jQueryAssets/common.js" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
 	<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -69,28 +69,33 @@
 <section>
     <div class="initialParragraph">
         <div class="clear"></div>
-        <h1>Las Playas</h1>
+        <h1><span class="slogan sloganPlus">Las Playas</span></h1>
         <div class="clear"></div>
-        <p>El Mar Cantábrico en su esplendor.</p>
+        <span class="sloganUnderText">El Mar Cantábrico en su esplendor.</span>
     </div>
 </section>
 
 <div class="clear"></div>
 
-<!-- LAS PLAYAS EN GENERAL -->
+<!-- CABECERA SECCION -->
 <section class="centralText">
-        <img src="../images/playa/playaNavia.jpg" style="padding:10px 10px 10px 10px; float:right;" alt="playa de las catedrales"><span class="plainTextWhitePlus">Nos enontramos con uno de los atractivos turísticos más importantes de la zona, sobre todo en épica estival; las playas. El <strong>Mar Cantábrico</strong> de bravura innegable, esculpe la roca creando maravillas naturales como la <strong>PLaya de las Catedrales</strong>, o amasando grandes arenales como la playa de Tapia de Casariego o la playa de la Concha de Artedo.
-        El rasgo más característico de nuestra costa es la prevalencia del bosque hasta prácticamente la línea de playa debido a la presencia en muchas de nuestras playas de desembocadoras de pequeños ríos locales, que en su lento discurrir, posibilitan la proliferación de pequeños espacios verdes donde los turistas pueden disfrutar de un picnic a la orilla del mar, en la acogedora sombra de los árboles.
-        la ubicación privilegiada de <a href="index.html" taget="_self">La Bilbaina</a>, próxima a la costa, te permitirá disfrutar de muchas de las playas del occidente asturiano. ¿A qué estás esperando?
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        </span>
-    
+  <div id="imagenMontana" class="headerImage">
+    <img src="../images/playa/conchaArtedo.jpg" class="imageText" alt="playa de Navia">
+    <br />
+    <span class="underImage" style="margin-left:220px;">Playa de la Concha de Artedo.</span>
+  </div>
+  <div id="textoVegadeo" class="hedaderText">
+    <span class="plainTextWhitePlus">
+    Nos enontramos con uno de los atractivos turísticos más importantes de la zona, sobre todo en épica estival; las playas. El <strong>Mar Cantábrico</strong> de bravura innegable, esculpe la roca creando maravillas naturales como la <strong>PLaya de las Catedrales</strong>, o amasando grandes arenales como la <strong>playa de Tapia de Casariego</strong> o la <strong>playa de la Concha de Artedo</strong>.
+    <p>&nbsp;</p>
+    El rasgo más característico de nuestra costa es la prevalencia del bosque hasta prácticamente la línea de playa debido a la presencia en muchas de nuestras playas de desembocadoras de pequeños ríos locales, que en su lento discurrir, posibilitan la proliferación de pequeños espacios verdes donde los turistas pueden disfrutar de un picnic a la orilla del mar, en la acogedora sombra de los árboles.
+    <p>&nbsp;</p>
+    la ubicación privilegiada de <a href="index.html" taget="_self">La Bilbaina</a>, próxima a la costa, te permitirá disfrutar de muchas de las playas del occidente asturiano. ¿A qué estás esperando?</span>
+  </div>     
 </section>
 
 <!--SLIDER -->
-<section>          
+<section style="height:500px">          
     <div id="sliderContainer" style="padding-top:0px">
     
         <script>
@@ -207,30 +212,36 @@
             </div>
     
             <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1600px; height: 500px;
                 overflow: hidden;">
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/01.jpg" /></a>
+                    <a u=image href="#"><img src="../images/playa/carousel/000.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/02.jpg" /></a>
+                    <a u=image href="#"><img src="../images/montana/carousel/001.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/03.jpg" /></a>
+                    <a u=image href="#"><img src="../images/playa/carousel/003.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/05.jpg" /></a>
+                    <a u=image href="#"><img src="../images/playa/carousel/002.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/playa/carousel/004.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/playa/carousel/005.jpg" /></a>
                 </div>
             </div>
-            <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+            <div u="navigator" class="jssorb01" style="top: 450px; right: 600px;">
                 <!-- bullet navigator item prototype -->
                 <div u="prototype"></div>
             </div>
             <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+            <span u="arrowleft" class="jssora05l" style="top: 220px; left: 8px;">
             </span>
             <!-- Arrow Right -->
-            <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+            <span u="arrowright" class="jssora05r" style="top: 220px; right: 8px;">
             </span>
             <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
         </div>
@@ -238,67 +249,86 @@
     </div>
 </section>
 
-<!-- PLAYA DE LAS CATEDRALES -->
-<section class="centralText">
+<!-- TEXTO DEFINITORIO DE SECCION -->
+<section class="centralText">        
+  <div id="imagenHistoria" class="definitionSectionimage">
+    <img src="../images/playa/catedrales.jpg" class="imageText" alt="Las Catedrales arcos">
+    <br />
+    <span class="underImage" style="margin-left: 250px;">Playa de las Catedrales</span>
+  </div>
+  
+  <div id="textoHistoria" class="definitionSectionText">
+    <span class="rotuloSecciones goldLinkSection" >La Playa de Las Catedrales</span>
     <span class="plainTextWhitePlus">
-    	<span class="rotuloMedio">La Playa de Las Catedrales</span>
-        <p>&nbsp;</p>
-        <img src="../images/playa/betweenCatedrales.JPG" style="padding:10px 10px 10px 10px; float:right;" alt="Las Catedrales callejon">
-        <img src="../images/playa/catedrales.jpg" style="padding:10px 10px 10px 10px; float:left;" alt="Las Catedrales arcos">
-        <div id="contenidoPlayas">
-        Ubicada a unos diez mintuos en coche de <a href="index.html" target="_self">La Bilbaina</a>, es un monumento a las fuerzas de la naturaleza. La majestuosidad de la roca horadada por la fuerza del mar la convierte en un paisaje asombroso en cualquier época del año.
-        <p>&nbsp;</p>
-        <strong>La Playa de las Catedrales</strong>, debe su nombre a las peculiares esculturas talladas en la roca por la fuerza del Mar Cantábrico, originalmente llamada Playa de Augas Santas, adopta este sobrenombre por el parecido de las citadas esculturas de roca con las catedrales góticas.
-        <p>&nbsp;</p>
-   			
-        La zona está rodeada de otras pequeñas playas de arena blanca y oleaje moderado que en época estival son más apropiadas para el baño. Pero en general, este monumento de la naturaleza se encuentra siempre muy visitado, con lo que te recomendamos concertar previamente una reserva en nuestro hotel si tienes planeado hacer una visita a esta maravilla natural que sin duda no deja a ningun visitante impasible.</span>
-		</div>
+    <p>&nbsp;</p>
+    Ubicada a unos diez mintuos en coche de <a href="index.html" target="_self">La Bilbaina</a>, es un monumento a las fuerzas de la naturaleza. La majestuosidad de la roca horadada por la fuerza del mar la convierte en un paisaje asombroso en cualquier época del año.
+    <p>&nbsp;</p>
+    <strong>La Playa de las Catedrales</strong>, debe su nombre a las peculiares esculturas talladas en la roca por la fuerza del Mar Cantábrico, originalmente llamada Playa de Augas Santas, adopta este sobrenombre por el parecido de las citadas esculturas de roca con las catedrales góticas.
+    <p>&nbsp;</p>
+    La zona está rodeada de otras pequeñas playas de arena blanca y oleaje moderado que en época estival son más apropiadas para el baño. Pero en general, este monumento de la naturaleza se encuentra siempre muy visitado, con lo que te recomendamos concertar previamente una reserva en nuestro hotel si tienes planeado hacer una visita a esta maravilla natural que sin duda no deja a ningun visitante impasible.</span>
+  </div>
 </section>
 
 <!-- LIKNS A OTRAS SECCIONES DENTRO DE EXPERIENCIAS -->
 <section class="sections fondoMedioPlaya">
-      <div id="laMontana" class="linkLeft">
-      	<h2><span class="rotuloMedio"><a href="montana.html" target="_self">La Montaña</a></span></h2>
-          <a href="montana.html" target="_self"><div id="imgLaMontana" class="thumbnailMontana"></div></a>
-          <p>&nbsp;</p>
-          <div class="changeColor">
-          <span class="plainText gold">La montaña asturiana, tan abrupta como majestuosa, es el máximo exponente del verde que nos da el nombre. Disfruta de las innumerables rutas que te acercarán a los rincones más espectaculares de toda la Cordillera Cantábrica.</span>
-          </div>
+  <div id="laMontana" class="link linkLeft">
+      <a href="montana.html" target="_self" style="text-decoration:none">
+          <h2><span class="rotuloMedioNothingGray" >La Montaña</span></h2>
+          <div id="imgLaMontana" class="thumbnailsLinks montana"></div>
+      </a>
+      <div class="changeColor">
+      <span class="plainText goldLinkSection">La montaña asturiana, tan abrupta como majestuosa, es el máximo exponente del verde que nos da el nombre. Disfruta de las innumerables rutas que te acercarán a los rincones más espectaculares de toda la Cordillera Cantábrica.</span>
       </div>
-      <div id="comarca" class="linkCenter">
-      	<h2><span class="rotuloMedio"><a href="comarca.html" target="_self">Comarca Oscos-Eo</a></span></h2>
-          <a href="comarca.html" target="_self"><div id="imgComarca" class="thumbnailComarca"></div></a>
-          <p>&nbsp;</p>
-          <div class="changeColor">
-          <span class="plainText gold">Conoce un poco más de la Comarca Oscos-Eo, sus tradiciones, su cultura y su esencia, que inunda todos nuestros rincones. Aprovecha tu estancia con nosotros para conocer uno de los rincones más privilegiados de Asturias.</span>
-          </div>
+  </div>
+  
+  <div id="comarca" class="link linkCenter">
+      <a href="comarca.html" target="_self" style="text-decoration:none">
+          <h2><span class="rotuloMedioNothingGray">Comarca Oscos-Eo</span></h2>
+          <div id="imgComarca" class="thumbnailsLinks comarca"></div>
+      </a>
+      <div class="changeColor">
+          <span class="plainText goldLinkSection">La Comarca Oscos-Eo, sus tradiciones, su cultura y su esencia. Aprovecha tu estancia con nosotros para conocer uno de los rincones más privilegiados de Asturias.</span>
       </div>
-      <div id="vegadeo" class="linkRight">
-      	<h2><span class="rotuloMedio"><a href="vegadeo.html" target="_self">Vegadeo</a></span></h2>
-        <a href="vegadeo.html" target="_self"><div id="imgVegadeo" class="thumbnailVegadeo"></div></a>
-        <p>&nbsp;</p>
-        <div class="changeColor">
-          <span class="plainText gold">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio. </span>
-          </div>
+    </div>
+  
+  <div id="vegadeo" class="link linkRight">
+      <a href="vegadeo.html" target="_self" style="text-decoration:none">
+          <h2><span class="rotuloMedioNothingGray" >Vegadeo</span></h2>
+          <div id="imgLaMontana" class="thumbnailsLinks vegadeo"></div>
+      </a>
+      <div class="changeColor">
+      <span class="plainText goldLinkSection">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio.</span>
       </div>
+  </div>
 </section>
 
 <!-- PLAYAS CERCANAS  -->
-<section class="centralText">
-   	<span class="plainTextWhitePlus">
-   		<span class="rotuloMedio">La costa Occidental</span>
-        <p>&nbsp;</p>
-		<img src="../images/playa/playaTapiaSurf.jpg" style=" padding:10px 10px 10px 10px; float: right;" alt="playa de Tapia">
-        <img src="../images/playa/conchaArtedo2.jpg" style="padding: 10px 10px 10px 10px; float: left;" alt="la concha de artedo">
-            Conocida como la playa del surf en Asturias, <strong>La playa de Tapia de Casariego</strong>, acoge una de las citas anuales más importantes de este deporte. Cada año por Semana Santa, se dan cita aficionados y profesionales del surf en uno de los campeonatos más prestigiosos del circuito español.
-            
-            <p>&nbsp;</p>
-            Otra de las joyas del occidente asturiano,<strong>La Concha de Artedo</strong>, un arenal de gran extensión, al que se accede tras atravesar un bosque cantábrico endémico. Próxima a una de las localidades más famosas de Asturias, el pueblo marinero de <strong>Cudillero</strong>. Premio al pueblo ejemplar de Asturias en el año 1992 y de obligada visita.
-            
-            <p>&nbsp;</p>
-            Por sus características orográficas el litoral asturiano alberga muchas otras playas, pues lo recortado de su costa, facilila la acumulación natural de arenales y pequeñas calas donde el visitante puede disfrutar de pequeños rincones en la costa lejos de la masificación, incluso en épocas estivales. Así playas como la <strong>Playa de Barayo</strong>, a poco más de 10 kilómetros de Navia de un característico color negruzco debido a la gran formación pizarrosa que la nutre de minerales, o la <strong>Playa de Frejulfe</strong>, un bonito rincón declarado Monumento Natural debido a la proliferación de especies de naturales protegidas que visitan la playa como el <strong>Ostrero</strong> o el <strong>Cormorán ceñudo</strong>. Además el fuerte oleaje también permite la práctica del surf.<br/>
-            En el municipio de El Franco, también se ubica otra de nuestras pequeñas joyas, la <strong>Playa de Porcía</strong>, a lo largo de casi trescientos metros de arenal y cortada por el río Porcía, lo que favorece uno de los fenómenos más característicos de las playas asturianas, la conjunción entre el bosque cantábrico y los arenales costeros.
-            </span>
+<section class="centralText" style="height:750px;">           
+  <div id="textoEventos" class="textoOtros">
+    <span class="rotuloSecciones goldLinkSection">La costa Occidental</span>
+    <span class="plainTextWhitePlus">
+    <p>&nbsp;</p>
+    Conocida como la playa del surf en Asturias, <strong>La playa de Tapia de Casariego</strong>, acoge una de las citas anuales más importantes de este deporte. Cada año por Semana Santa, se dan cita aficionados y profesionales del surf en uno de los campeonatos más prestigiosos del circuito español.
+    
+    <p>&nbsp;</p>
+    Otra de las joyas del occidente asturiano,<strong>La Concha de Artedo</strong>, un arenal de gran extensión, al que se accede tras atravesar un bosque cantábrico endémico. Próxima a una de las localidades más famosas de Asturias, el pueblo marinero de <strong>Cudillero</strong>. Premio al pueblo ejemplar de Asturias en el año 1992 y de obligada visita.
+    
+    <p>&nbsp;</p>
+    Por sus características orográficas el litoral asturiano alberga muchas otras playas, pues lo recortado de su costa, facilila la acumulación natural de arenales y pequeñas calas donde el visitante puede disfrutar de pequeños rincones en la costa lejos de la masificación, incluso en épocas estivales. Así playas como la <strong>Playa de Barayo</strong>, a poco más de 10 kilómetros de Navia de un característico color negruzco debido a la gran formación pizarrosa que la nutre de minerales, o la <strong>Playa de Frejulfe</strong>, un bonito rincón declarado Monumento Natural debido a la proliferación de especies de naturales protegidas que visitan la playa como el <strong>Ostrero</strong> o el <strong>Cormorán ceñudo</strong>. Además el fuerte oleaje también permite la práctica del surf.<br/>
+    En el municipio de El Franco, también se ubica otra de nuestras pequeñas joyas, la <strong>Playa de Porcía</strong>, a lo largo de casi trescientos metros de arenal y cortada por el río Porcía, lo que favorece uno de los fenómenos más característicos de las playas asturianas, la conjunción entre el bosque cantábrico y los arenales costeros.
+    </span>
+  </div>
+  <div id="imageConchaArtedo" class="imageUp" >
+    <img src="../images/playa/conchaArtedo2.jpg" class="imageText" alt="la concha de artedo">
+    <br />
+    <span class="underImage" style="margin-left:160px;">La Concha de Artedo </span>
+  </div>
+  
+  <div id="imagePlayaTapia" class="imageDown">
+    <img src="../images/playa/playaTapiaSurf.jpg" class="imageText" alt="playa de Tapia">
+    <br />
+    <span class="underImage" style="margin-left:170px;">Tapia de Casariego.</span>
+  </div>
 </section>
 
 <footer>

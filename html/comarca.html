@@ -11,14 +11,13 @@
     <link href="../css/text.css" rel="stylesheet" type="text/css">
     <link href="../css/pages.css" rel="stylesheet" type="text/css">
     <link href="../css/common.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Nothing+You+Could+Do:400,700|Open+Sans|Syncopate|Josefin+Sans:300' rel='stylesheet' type='text/css'>
     <link href="../jQueryAssets/common.js" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap-3.3.4.css" rel="stylesheet" type="text/css">
 	<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
     <link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
     <link href="../jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
-    
-	
+
 	<link href="../css/sliderStyles.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../js/jssor.js"></script>
@@ -69,27 +68,35 @@
 <section>
     <div class="initialParragraph">
         <div class="clear"></div>
-        <h1>Comarca Oscos - EO</h1>
+        <h1><span class="slogan sloganPlus">Comarca Oscos - EO</span></h1>
         <div class="clear"></div>
-        <p>Una reserva de la biosfera al alcance de tu mano.</p>
+        <span class="sloganUnderText">Una reserva de la biosfera al alcance de tu mano.</span>
     </div>
 </section>
 
 <div class="clear"></div>
 
-<!-- La comarca Oscos Eo -->
+<!-- CABECERA SECCION -->
 <section class="centralText">
-        <img src="../images/comarca/lasCatedrales_peque.jpg" style="padding:10px 10px 10px 10px; float:right;" alt="playa de las catedrales"><span class="plainTextWhitePlus">La comarca Oscos Eo está situada en el occidente Asturiano, situada a unos 150 kilometros de 
-    la capital, Oviedo, limita con la provincia gallega de Lugo y está formada por los concejos de San Martín de Oscos, San Tirso de Abres, Santa Eulalia de Oscos, Taramundi, Vegadeo, Villanueva de Oscos y Castropol.<br />
-    El núcleo poblacional más grande de la comarca es Vegadeo, capital del concejo que lleva su mismo nombre y centro administrativo de la comarca, donde se concentra aproximadamente un 25% de la población.<br />
-    La Comarca Oscos Eo es una zona muy particular, ya que disfruta de una gran extensión de monte, arbolado o raso, con majestuosas cumbres y amplios valles característicos de la orografía asturiana, donde se esconden aldeas y nucleos poblacionales en los que el tiempo parece estancarse.<br />
-    Los paisajes rurales, surcados en su totalidad por abundantes cursos de agua, dan paso progresivamente,a medida que caminamos hacia el norte, al paisaje esculpido por el Mar Cantábrico, que ofrece multitud de opciones al visitante en función de la época del año en que se aproxime a nuestra comarca.<br/ >
-    Desde esta sección, hemos procurado dar a conocer a nuestros futuros huéspedes un poco de nuestra comarca, que tanto nos ha dado y tanto nos da, porque en cierta medida nos encontramos en deduda con ella. Esta es nuestra forma de rendir homenaje a nuestra tierra.</span>
-    
+  <div id="imagenMontana" class="headerImage">
+      <img src="../images/comarca/tipicalBuildings.jpg" class="imageText" alt="horreos tipicos">
+      <br />
+      <span class="underImage" style="margin-left:260px;">La comarca Oscos Eo</span>
+  </div>
+  <div id="textoVegadeo" class="hedaderText">
+  <span class="plainTextWhitePlus">
+    La <strong>Comarca Oscos Eo</strong> está situada en el occidente Asturiano, situada a unos 150 kilometros de Oviedo, limita con la provincia gallega de Lugo y está formada por los concejos de San Martín de Oscos, San Tirso de Abres, Santa Eulalia de Oscos, Taramundi, Vegadeo, Villanueva de Oscos y Castropol.
+    <p>&nbsp;</p>
+  El núcleo poblacional más grande de la comarca es <a href="vegadeo.html" target="_self">Vegadeo</a>, capital del concejo que lleva su mismo nombre y centro administrativo de la comarca, donde se concentra aproximadamente un 25% de la población.<br />
+  La Comarca Oscos Eo es una zona muy particular, ya que disfruta de una gran extensión de monte, arbolado o raso, con majestuosas cumbres y amplios valles característicos de la orografía asturiana, donde se esconden aldeas y nucleos poblacionales en los que el tiempo parece estancarse.
+  <p>&nbsp;</p>
+  Los paisajes rurales, surcados en su totalidad por abundantes cursos de agua, dan paso progresivamente,a medida que caminamos hacia el norte, al paisaje esculpido por el <strong>Mar Cantábrico</strong>, que ofrece multitud de opciones al visitante en función de la época del año en que se aproxime a nuestra comarca.<br/ >
+  Desde esta sección, hemos procurado dar a conocer a nuestros futuros huéspedes un poco de nuestra comarca, que tanto nos ha dado y tanto nos da, porque en cierta medida nos encontramos en deduda con ella. Esta es nuestra forma de rendir homenaje a nuestra tierra.</span>
+</div>  
 </section>
 
 <!--SLIDER -->
-<section>          
+<section style="height:500px">          
     <div id="sliderContainer" style="padding-top:0px">
     
         <script>
@@ -206,30 +213,33 @@
             </div>
     
             <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1600px; height: 500px;
                 overflow: hidden;">
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/01.jpg" /></a>
+                    <a u=image href="#"><img src="../images/comarca/carousel/000.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/02.jpg" /></a>
+                    <a u=image href="#"><img src="../images/comarca/carousel/001.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/03.jpg" /></a>
+                    <a u=image href="#"><img src="../images/comarca/carousel/003.jpg" /></a>
                 </div>
                 <div>
-                    <a u=image href="#"><img src="../images/comarca/landscape/05.jpg" /></a>
+                    <a u=image href="#"><img src="../images/comarca/carousel/002.jpg" /></a>
+                </div>
+                <div>
+                    <a u=image href="#"><img src="../images/comarca/carousel/004.jpg" /></a>
                 </div>
             </div>
-            <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+            <div u="navigator" class="jssorb01" style="top: 450px; right: 600px;">
                 <!-- bullet navigator item prototype -->
                 <div u="prototype"></div>
             </div>
             <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+            <span u="arrowleft" class="jssora05l" style="top: 220px; left: 8px;">
             </span>
             <!-- Arrow Right -->
-            <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+            <span u="arrowright" class="jssora05r" style="top: 220px; right: 8px;">
             </span>
             <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
         </div>
@@ -239,63 +249,84 @@
 
 <!-- TEXTO DEFINITORIO DE SECCION -->
 <section class="centralText">
+  <div id="imagenHistoria" class="definitionSectionimage">
+    <img src="../images/comarca/pote.jpg" class="imageText" alt="fabada asturiana">
+    <br />
+    <span class="underImage" style="margin-left: 220px;">Pote Asturiana</span>
+  </div>
+  <div id="textoHistoria" class="definitionSectionText">
+    <span class="rotuloSecciones goldLinkSection" >Gastronom&iacute;a</span>
     <span class="plainTextWhitePlus">
-    	<span class="rotuloMedio">Gastronom&iacute;a</span>
-        <p>&nbsp;</p>
-        La gastronomía de la Comarca Oscos Eo, viene dada por la calidad de sus productos. La situación geográfica privilegiada de <img src="../images/comarca/pote.jpg" style="padding:10px 10px 10px 10px; float:right;" alt="fabada asturiana">la zona, permite que la huerta de la región sea muy productiva, aportando a los platos verduras y hortalizas de gran calidad. 
-En el apartado de carnes, y gracias a las amplias zonas de pasto, encontramos ternera de primerisima calidad, cerdo y ocasionalmente, siempre en temporada, carne de caza procedente de los bosques del interior.
-
-Los platos más característicos de la comarca son el Caldo de Nabizas, los callos con garbanzos y la omnipresente fabada asturiana.
-<img src="../images/comarca/pulpo.jpg" style="padding: 10px 10px 10px 10px; float:left;" alt="pulpo a la gallega">
-La Comarca, también linda con el Mar Cantábrico, con lo que la calidad de sus pescados y mariscos es prácticamente indiscutible, destacamos, con permiso de nuestros vecinos, el Pulpo o la Lubina salvaje, cuya receta, admite innumerables variaciones a lo largo de la costa de la Comarca Oscos Eo.
-Los postres admiten también una gran variedad, destacando el arroz con leche, un gran catálogo de tartas caseras y los conocidos freixolos, típicos de carnaval que consisten en una especie de torta de huevo frita, que se sirve en un plato remojada con miel o bien enrollada sobre sí misma con algún tipo de relleno, ya sea mermelada, crema pastelera… etc..</span>
-
+      <p>&nbsp;</p>
+      La gastronomía de la <strong>Comarca Oscos Eo</strong>, viene dada por la calidad de sus productos. La situación geográfica privilegiada de la zona, permite que la huerta de la región sea muy productiva, aportando a los platos verduras y hortalizas de gran calidad. 
+    En el apartado de carnes, y gracias a las amplias zonas de pasto, encontramos ternera de primerisima calidad, cerdo y ocasionalmente, siempre en temporada, carne de caza procedente de los bosques del interior.
+    <p>&nbsp;</p>
+    Los platos más característicos de la comarca son el <strong>Caldo de Nabizas</strong>, los <strong>callos con garbanzos</strong> y la omnipresente fabada asturiana.
+    La Comarca, también linda con el <strong>Mar Cantábrico</strong>, con lo que la calidad de sus pescados y mariscos es prácticamente indiscutible, destacamos, con permiso de nuestros vecinos, el Pulpo o la Lubina salvaje, cuya receta, admite innumerables variaciones a lo largo de la costa de la <strong>Comarca Oscos Eo</strong>.
+    Los postres admiten también una gran variedad, destacando el arroz con leche, un gran catálogo de tartas caseras y los conocidos freixolos, típicos de carnaval que consisten en una especie de torta de huevo frita, que se sirve en un plato remojada con miel o bien enrollada sobre sí misma con algún tipo de relleno, ya sea mermelada, crema pastelera… etc..</span>
+  </div>     
 </section>
 
 <!-- LIKNS A OTRAS SECCIONES DENTRO DE EXPERIENCIAS -->
 <section class="sections fondoMedioComarca">
-      <div id="lasPlayas" class="linkPlayas">
-      	<h2><span class="rotuloMedio"><a href="playa.html" target="_self">La Playa</a></span></h2>
-          <a href="playa.html" target="_self"><div id="imgLasPlayas" class="thumbnailPlaya"></div></a>
-          <p>&nbsp;</p>
+    <div id="lasPlayas" class="link linkLeft">
+      <a href="playa.html" target="_self" style="text-decoration:none">
+      	<h2><span class="rotuloMedioNothingGray" style="color:#996600;">La Playa</span></h2>
+      	<div id="imgLasPlayas" class="thumbnailsLinks playa"></div>
+      </a>
           <div class="changeColor">
-          	<span class="plainText gold">La Costa Verde se funde con la cercanía de la montaña adoptando las formas más caprichosas que el visitante puede contemplar, y al fondo, siempre el rugir del Mar Cantábrico.</span>
+          	<span class="plainText goldLinkSection">La Costa Verde se funde con la cercanía de la montaña adoptando las formas más caprichosas que el visitante puede contemplar, y de fondo, siempre el rugir del Mar Cantábrico.</span>
           </div>
+    </div>
+    <div id="comarca" class="link linkCenter">
+      <a href="montana.html" target="_self" style="text-decoration:none">
+          <h2><span class="rotuloMedioNothingGray" style="color:#996600;">La Montaña</span></h2>
+          <div id="imgMontana" class="thumbnailsLinks montana"></div>
+      </a>
+      <div class="changeColor">
+          <span class="plainText goldLinkSection">La montaña asturiana, tan abrupta como majestuosa, es el máximo exponente del verde que nos da el nombre. Disfruta de ∫los rincones más espectaculares de toda la Cordillera Cantábrica.</span>
       </div>
-      <div id="laMontana" class="linkMontana">
-      	<h2><span class="rotuloMedio"><a href="montana.html" target="_self">La Montaña</a></span></h2>
-          <a href="montana.html" target="_self"><div id="imgLaMontana" class="thumbnailMontana"></div></a>
-          <p>&nbsp;</p>
-          <div class="changeColor">
-          <span class="plainText gold">La montaña asturiana, tan abrupta como majestuosa, es el máximo exponente del verde que nos da el nombre. Disfruta de las innumerables rutas que te acercarán a los rincones más espectaculares de toda la Cordillera Cantábrica.</span>
-          </div>
+    </div>
+    
+    <div id="vegadeo" class="link linkRight">
+      <a href="vegadeo.html" target="_self" style="text-decoration:none">
+          <h2><span class="rotuloMedioNothingGray" style="color:#996600;">Vegadeo</span></h2>
+          <div id="imgLaMontana" class="thumbnailsLinks vegadeo"></div>
+      </a>
+      <div class="changeColor">
+          <span class="plainText goldLinkSection">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio.</span>
       </div>
-      <div id="vegadeo" class="linkVegadeo">
-      	<h2><span class="rotuloMedio"><a href="vegadeo.html" target="_self">Vegadeo</a></span></h2>
-        <a href="montana.html" target="_self"><div id="imgVegadeo" class="thumbnailVegadeo"></div></a>
-        <p>&nbsp;</p>
-        <div class="changeColor">
-          <span class="plainText gold">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio. </span>
-          </div>
-      </div>
+    </div>
 </section>
 
 <!-- GASTRONOMIA Y ARTESANIA -->
-<section class="centralText">
-   	<span class="plainTextWhitePlus">
-   		<span class="rotuloMedio">Artesan&iacute;a</span>
+<section class="centralText" style="height:800px">
+	<div id="textoEventos" class="textoOtros">
+    	<span class="rotuloSecciones goldLinkSection">Artesan&iacute;a</span>
+        <span class="plainTextWhitePlus">
         <p>&nbsp;</p>
-		<img src="../images/comarca/navajas-taramundi.jpg" style=" padding:10px 10px 10px 10px; float: right;" alt="navajas de taramundi">
             Conocidas en toda la región son las navajas y cuchillos de Taramundi, emblema no solo de la comarca sino también de toda Asturias. Su proceso de fabricación, pr&aacute;cticamente inalterada, conserva técnicas centenarias para trabajar el acero, aunque las nuevas técnicas se combinan con gran acierto en los talleres, dando lugar a curiosos diseños dignos de apreciar. A tal efecto existe el llamado <a href="http://www.taramundi.es/museo-de-la-cuchilleria" target="_blank"> Museo de la cuchillería </a>, donde el visitante podrá contemplar todos los procesos de fabricación de estas piezas centenarias.
             <p>&nbsp;</p>
             No podemos dejar esta sección sin hacer mención <a href="http://www.asturiasbiosfera.com/que-ver-en-asturias/telar-irene-villar" target="_blank">al antiguo telar de Santa Eulalia de Oscos</a>, donde ya desde hace un tiempo se están recuperando las antiguas técnicas de telar de la zona, para llevar a cabo la realización de alfombras, fulares, mantelerías... etc, siempre tratando de combinar un toque actual en us diseños con la tradici&oacute;n.
-            <img src="../images/comarca/pendientesQuiastolita.jpg" style="padding: 10px 10px 10px 10px; float: left;" alt="artesania en quiastolita">
+            
             <p>&nbsp;</p>
-            Otras artesanias en peligro de extici&Oacute;n que por ello merecen especial difusi&oacute;n son la cester&iacute;a, una t&eacute;cnica antigua para la fabricaci&oacute;n de cestos que conlleva la elecci&oacute;n por parte del artesano, de la madera, su posterior procesado en l&aacute;minas y el entretejido de las mismas, un proceso lento y laborioso que la industria ha arrinconado en las zonas m&aacute;s rurales de Asturias, siendo la Comarca Oscos Eo una de ellas.
+            Otras artesanias en peligro de extici&Oacute;n que por ello merecen especial difusi&oacute;n son <strong>la cester&iacute;a</strong>, una t&eacute;cnica antigua para la fabricaci&oacute;n de cestos que conlleva la elecci&oacute;n por parte del artesano, de la madera, su posterior procesado en l&aacute;minas y el entretejido de las mismas, un proceso lento y laborioso que la industria ha arrinconado en las zonas m&aacute;s rurales de Asturias, siendo la <stron>Comarca Oscos Eo</strong> una de ellas.
             <p>&nbsp;</p>
       
-            Por &uacute;ltimo y no menos importante, cabe destacar que la Comarca Oscos EO dispone de uno de los yacimientos de quiastolita m&aacute;s importantes del país. Esta gema, es una variedad de la andalucita, aunque no en el sentido estricto, y era conocida por los peregrinos de la ruta de santiago como <i>lapis crucifer</i>, es decir, "piedra cruz" o "piedra de la cruz". En la actualidad nuestros artesanos elaboran piezas de gran belleza que se pueden apreciar por toda la comarca.
+            Por &uacute;ltimo y no menos importante, cabe destacar que la <strong>Comarca Oscos EO</strong> dispone de uno de los yacimientos de quiastolita m&aacute;s importantes del país. Esta gema, es una variedad de la andalucita, aunque no en el sentido estricto, y era conocida por los peregrinos de la ruta de santiago como <i>lapis crucifer</i>, es decir, <i>piedra cruz</i> o <i>piedra de la cruz</i>. En la actualidad nuestros artesanos elaboran piezas de gran belleza que se pueden apreciar por toda la comarca.
     	</span>
+     </div>
+     <div id="imageNavajas" class="imageUp" >
+    	<img src="../images/comarca/navajasTaramundi.jpg" class="imageText" alt="navajas de taramundi">
+        <br />
+        <span class="underImage" style="margin-left:70px;">Selección de navajas de Taramundi. </span>
+    </div>
+    
+     <div id="imageQuiastolita" class="imageDown">
+    	<img src="../images/comarca/pendientesQuiastolita.jpg" class="imageText" alt="artesania en quiastolita">
+        <br />
+        <span class="underImage" style="margin-left:140px;">Artesania de quiastolita.</span>
+    </div>
 </section>
 
 <footer>

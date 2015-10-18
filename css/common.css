@@ -110,6 +110,19 @@ body
 	background-attachment:fixed;
 }
 
+/*Estilo para las franjas grises*/
+
+.initialParragraph
+{
+	padding-top: 350px;
+	padding-bottom:50px;
+	width: 100%;
+	background: #333537;
+	color: #ffffff;
+	text-align: center;
+}
+.initialParragraph p { padding-bottom: 10px; }
+
 .clear	{ clear: both;}
 
 /*Texto central de las páginas de secciones*/
@@ -148,6 +161,20 @@ aside
 	position:absolute;
 }
 
+/*Estilos para la primera sección de las páginas de seccion */
+
+.hedaderText
+{
+	width: 65%;
+	float:left;
+}
+
+.headerImage
+{
+	padding: 10px 10px 10px 20px;
+	float: right;
+}
+
 #carousel
 {
 	border:solid;
@@ -155,14 +182,6 @@ aside
 	margin: 80px 0px 0px 20px;
 	width:95%;
 	align-content:center;
-}
-
-/*capa que contiene foto de miniaturas */
-.thumbnailContainer
-{
-	width:220px;
-	margin: 50px 30px 0px 10px;
-	float:left;
 }
 
 /* estilos para las miniaturas de los links de miniaturas que hay en la mitad del body */
@@ -176,27 +195,123 @@ aside
 	border-radius: 2px 20px;
 }
 
+/*Contenedores de los links de seccion */
+.link
+{
+	width:300px;
+	height:150px;
+	float:left;
+}
+
+.linkLeft
+{
+	margin-left:200px;
+}
+
+.linkRight
+{
+	margin-left:30px;
+	margin-right: 150px;
+}
+
+.linkCenter
+{
+	margin-left:30px;
+}
+
+/*Animación de fondo blanco para los textos de los links de seccion*/
+.changeColor
+{
+	height:200px;
+	padding: 10px 10px 0px 10px;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.changeColor:hover
+{
+	background-color: rgba(255,254,254,0.8);
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
 /*Fondos para los links de seccion*/
 .montana
 {
-	background-image:url(../images/montana/river_cascade.jpg);
+	background-image:url(../images/common/sectionLinks/riverCascade.jpg);
 }
 
 .playa
 {
-	background-image:url(../images/playa/playaTapia.jpg);
+	background-image:url(../images/common/sectionLinks/playaTapia.jpg);
 }
 
 .vegadeo
 {
-	background-image:url(../images/vegadeo/vegadeo_air.jpg);
+	background-image:url(../images/common/sectionLinks/vegadeoChurch.jpg);
 }
 
 .comarca
 {
-	background-image:url(../images/comarca/sailingEo.jpg);
+	background-image:url(../images/common/sectionLinks/sailingEo.jpg);
 }
 
+.laBilbaina
+{
+	background-image:url(../images/thumbnails/laBilbaina.jpg);
+}
+
+.experiences
+{
+	background-image:url(../images/thumbnails/experiences.jpg);
+}
+.gallery
+{
+	background-image:url(../images/thumbnails/gallery.jpg);
+}
+
+/*Estilo para la definición de sección en las páginas Vegadeo, Montaña, Playa y Comarca*/
+.definitionSectionText
+{
+	float:left; 
+	width:60%;
+}
+
+.definitionSectionimage
+{
+	padding: 40px 20px 10px 10px; 
+	float:left; 
+	margin-top:50px;
+}
+
+/*Estilos para sección pre-footer de cada página de seccion (Comarca, Montaña, Playa, Vegadeo) */
+.textoOtros
+{
+	width:65%;
+	float:left;
+	/*
+	border:solid;
+	border-color:red;
+	border-width:2px;
+	*/
+}
+
+.imageUp
+{
+	margin-top:100px;
+	width: 30%;
+	height: 270px;
+	float: right;
+}
+
+.imageDown
+{
+	width: 30%;
+	height:250px;
+	float: right;
+	margin-top: 30px;
+}
 /*CAPAS DEL FOOTER*/
 footer
 {
