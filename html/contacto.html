@@ -7,6 +7,7 @@
     <title>Hotel La Bilbaina - Contacto</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
     <link href="../css/text.css" rel="stylesheet" type="text/css">
     <link href="../css/pages.css" rel="stylesheet" type="text/css">
     <link href="../css/common.css" rel="stylesheet" type="text/css">
@@ -25,20 +26,10 @@
 
 <body>
 
-<div id="weather" class="widgetWeather">
-    	<span class="rotuloMedio">El Tiempo en Vegadeo</span>
-        <p>&nbsp;</p>
-		<script type='text/javascript' src='http://www.aemet.es/es/eltiempo/prediccion/municipios/launchwidget/vegadeo-veiga-a-vegadeo-id33074?w=g3p11110001ohmffffffw350z163xcccccctccccccr0s3n2'>
-        </script>
-	  	<script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
-		<script src="../js/bootstrap.js" type="text/javascript"></script>
-		<noscript>
-    	</noscript>
-	</div>
-    <header>
+<header>
     <div class="titleAndSlogan">
         <div class="logo">
-            <h1><span class="rotuloLogo">La Bilbaína</span></h1>
+            <h1><span class="rotuloLogo"><a href="index.html" style="text-decoration:none;">La Bilbaína</a></span></h1>
             <div class="sloganContainer">
                 <span class="slogan">Tu hotel en Vegadeo</span>
             </div>
@@ -58,13 +49,75 @@
         </div>
     </div>
     <div id="socialH" class="socialHeader">
-        <div class="	facebook"><img src="../content/images/social/facebook.png" width="130" height="40" alt=""/></div>
-        <div class="tripAdvisor"><img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/></div>
+        <div class="	facebook">
+        	<a href="https://www.facebook.com/pages/Hotel-La-Bilbaina/124028204403916" title="Hotel La Bilbaina" target="_TOP">
+            	<img src="../content/images/social/facebook.png" width="130" height="40" alt=""/>
+            </a>
+        </div>
+        <div id="tripAdvisor" class="tripAdvisor">
+            <a href="http://www.tripadvisor.es/Hotel_Review-g1080346-d2089956-Reviews-Hotel_La_Bilbaina-Vegadeo_Municipality_Asturias.html"
+            title="Hotel La Bilbaina Vegadeo" target="_blank">
+        		<img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/>
+            </a>
+         </div>
         <div class="googlePlus"><img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/></div>
     </div>
+    <nav>
+      <div id="breadCrumb">
+          <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">La Bilbaina</li>
+          </ol>
+      </div>
+    </nav>
+    
 </header>
 
-    <footer>
+<div id="fondoHeader"></div>
+
+<body>
+
+<section class="centralText" style="padding-top:300px">
+  <div id="imagenBilbaina" class="headerImage">
+      <img src="../images/labilbaina/labilbaina.jpg" class="imageText" alt="la bilbaina">
+      <br />
+      <span class="underImage" style="margin-left:260px;">La Bilbaina</span>
+  </div>
+<div id="textoBilbaina" class="hedaderText">
+	<span class="plainTextWhitePlus">
+ 	Nos encontramos en la Plaza del ayuntamiento 6, Vegadeo Asturias.<br />
+	También en Teléfono: 985 634 035 info@hotellabilbaina.es<br />
+    <p>&nbsp;</p>
+    O puedes encontrarnos en nuestros perfiles de las redes sociales:
+	</span>
+</div>  
+<div id="social" style="margin: 10px 0px 0px 100px">
+    <div class="	facebook">
+    	<a href="https://www.facebook.com/pages/Hotel-La-Bilbaina/124028204403916" title="Hotel La Bilbaina Vegadeo" target="_TOP">
+        	<img src="../content/images/social/facebook.png" width="130" height="40" alt=""/>
+        </a>
+    </div>
+  	<div id="tripAdvisor" class="tripAdvisor">
+    	<a href="http://www.tripadvisor.es/Hotel_Review-g1080346-d2089956-Reviews-Hotel_La_Bilbaina-Vegadeo_Municipality_Asturias.html"
+            title="Hotel La Bilbaina Vegadeo" target="_blank">
+        	<img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/>
+        </a>
+    </div>
+    </div>
+</section>
+
+<div id="weather" class="widgetWeather">
+    	<span class="rotuloMedio">El Tiempo en Vegadeo</span>
+        <p>&nbsp;</p>
+		<script type='text/javascript' src='http://www.aemet.es/es/eltiempo/prediccion/municipios/launchwidget/vegadeo-veiga-a-vegadeo-id33074?w=g3p11110001ohmffffffw350z163xcccccctccccccr0s3n2'>
+        </script>
+	  	<script src="../js/jquery-1.11.2.min.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.js" type="text/javascript"></script>
+		<noscript>
+    	</noscript>
+	</div>
+
+<footer>
 	<div id="webMap" class="treeLinks">
     	<div id="footerLinks">
 	        <div id="homeFooterLink">
@@ -107,8 +160,17 @@
     
   <div id="socialIconos" class="socialFooter">
   		<div id="findUs"> <span class="footerText">Encu&eacute;ntranos en:</span> </div>
-  		<div id="facebook" class="facebook"> <img src="../content/images/social/facebook.png" width="130" height="40" alt=""/> </div>
-  		<div id="tripAdvisor" class="tripAdvisor"> <img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/> </div>
+  		<div class="	facebook">
+        	<a href="https://www.facebook.com/pages/Hotel-La-Bilbaina/124028204403916" title="Hotel La Bilbaina Vegadeo" target="_TOP">
+            	<img src="../content/images/social/facebook.png" width="130" height="40" alt=""/>
+            </a>
+        </div>
+  		<div id="tripAdvisor" class="tripAdvisor">
+            <a href="http://www.tripadvisor.es/Hotel_Review-g1080346-d2089956-Reviews-Hotel_La_Bilbaina-Vegadeo_Municipality_Asturias.html"
+            title="Hotel La Bilbaina Vegadeo" target="_blank">
+        		<img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/>
+            </a>
+         </div>
   		
   		<div id="googlePlus" class="googlePlus"> <img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/> </div>
   </div>

@@ -7,6 +7,7 @@
     <title>Hotel La Bilbaina - Tu hotel en Vegadeo</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
     <link href="../css/text.css" rel="stylesheet" type="text/css">
     <link href="../css/pages.css" rel="stylesheet" type="text/css">
     <link href="../css/common.css" rel="stylesheet" type="text/css">
@@ -28,7 +29,7 @@
 <header>
     <div class="titleAndSlogan">
         <div class="logo">
-            <h1><span class="rotuloLogo">La Bilbaína</span></h1>
+            <h1><span class="rotuloLogo"><a href="index.html" style="text-decoration:none;">La Bilbaína</a></span></h1>
             <div class="sloganContainer">
                 <span class="slogan">Tu hotel en Vegadeo</span>
             </div>
@@ -48,174 +49,41 @@
         </div>
     </div>
     <div id="socialH" class="socialHeader">
-        <div class="	facebook"><img src="../content/images/social/facebook.png" width="130" height="40" alt=""/></div>
-        <div class="tripAdvisor"><img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/></div>
+        <div class="	facebook">
+        	<a href="https://www.facebook.com/pages/Hotel-La-Bilbaina/124028204403916" title="Hotel La Bilbaina" target="_TOP">
+            	<img src="../content/images/social/facebook.png" width="130" height="40" alt=""/>
+            </a>
+        </div>
+        <div id="tripAdvisor" class="tripAdvisor">
+            <a href="http://www.tripadvisor.es/Hotel_Review-g1080346-d2089956-Reviews-Hotel_La_Bilbaina-Vegadeo_Municipality_Asturias.html"
+            title="Hotel La Bilbaina Vegadeo" target="_blank">
+        		<img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/>
+            </a>
+         </div>
         <div class="googlePlus"><img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/></div>
     </div>
 </header>
 
-<!-- SLIDER -->
-<section style="padding-top: 190px;">          
-    <div id="sliderContainer">
-    
-        <script>
-            jQuery(document).ready(function ($) {
-                //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
-                //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
-    
-                var _SlideshowTransitions = [
-                //Swing Outside in Stairs
-                {$Duration: 1200, x: 0.2, y: -0.1, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 1.3, $Top: 2.5} }
-    
-                //Dodge Dance Outside out Stairs
-                , { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.1, 0.9], $Top: [0.1, 0.9] }, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
-    
-                //Dodge Pet Outside in Stairs
-                , { $Duration: 1500, x: 0.2, y: -0.1, $Delay: 20, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInWave, $Top: $JssorEasing$.$EaseInWave, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
-    
-                //Dodge Dance Outside in Random
-                , { $Duration: 1500, x: 0.3, y: -0.3, $Delay: 80, $Cols: 8, $Rows: 4, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInJump, $Top: $JssorEasing$.$EaseInJump, $Clip: $JssorEasing$.$EaseOutQuad }, $Outside: true, $Round: { $Left: 0.8, $Top: 2.5} }
-    
-                //Flutter out Wind
-                , { $Duration: 1800, x: 1, y: 0.2, $Delay: 30, $Cols: 10, $Rows: 5, $Clip: 15, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $Reverse: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 2050, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseOutWave, $Clip: $JssorEasing$.$EaseInOutQuad }, $Outside: true, $Round: { $Top: 1.3} }
-    
-                //Collapse Stairs
-                , { $Duration: 1200, $Delay: 30, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraightStairs, $Assembly: 2049, $Easing: $JssorEasing$.$EaseOutQuad }
-    
-                //Collapse Random
-                , { $Duration: 1000, $Delay: 80, $Cols: 8, $Rows: 4, $Clip: 15, $SlideOut: true, $Easing: $JssorEasing$.$EaseOutQuad }
-    
-                //Vertical Chess Stripe
-                , { $Duration: 1000, y: -1, $Cols: 12, $Formation: $JssorSlideshowFormations$.$FormationStraight, $ChessMode: { $Column: 12} }
-    
-                //Extrude out Stripe
-                , { $Duration: 1000, x: -0.2, $Delay: 40, $Cols: 12, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Assembly: 260, $Easing: { $Left: $JssorEasing$.$EaseInOutExpo, $Opacity: $JssorEasing$.$EaseInOutQuad }, $Opacity: 2, $Outside: true, $Round: { $Top: 0.5} }
-    
-                //Dominoes Stripe
-                , { $Duration: 2000, y: -1, $Delay: 60, $Cols: 15, $SlideOut: true, $Formation: $JssorSlideshowFormations$.$FormationStraight, $Easing: $JssorEasing$.$EaseOutJump, $Round: { $Top: 1.5} }
-                ];
-    
-                var options = {
-                    $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                    $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-                    $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                    $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-    
-                    $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                    $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                    $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                    //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                    //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                    $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-                    $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                    $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                    $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                    $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                    $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-    
-                    $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
-                        $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
-                        $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
-                        $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
-                        $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
-                    },
-    
-                    $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
-                        $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
-                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                        $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                        $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                        $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-                        $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                        $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                        $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-                    },
-    
-                    $ArrowNavigatorOptions: {
-                        $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-                        $ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    }
-                };
-    
-                var jssor_slider2 = new $JssorSlider$("slider2_container", options);
-    
-                //responsive code begin
-                //you can remove responsive code if you don't want the slider scales while window resizes
-                function ScaleSlider() {
-                    var parentWidth = jssor_slider2.$Elmt.parentNode.clientWidth;
-                    if (parentWidth)
-                        jssor_slider2.$ScaleWidth(Math.min(parentWidth, 600));
-                    else
-                        window.setTimeout(ScaleSlider, 30);
-                }
-    
-                ScaleSlider();
-    
-                $(window).bind("load", ScaleSlider);
-                $(window).bind("resize", ScaleSlider);
-                $(window).bind("orientationchange", ScaleSlider);
-    
-                //responsive code end
-            });
-        </script>
-        
-        <div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 100%; height: 300px;">
-    
-            <!-- Loading Screen -->
-            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <!--<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                    background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
-                </div>-->
-                <div style="position: absolute; display: block; background: url(..content/images/loading.gif) no-repeat center center;
-                    top: 0px; left: 0px;width: 100%;height:100%;">
-                </div>
-            </div>
-    
-            <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1600px; height: 500px;
-                overflow: hidden;">
-                <div>
-                    <a u=image href="#"><img src="../images/comarca/carousel/000.jpg" /></a>
-                </div>
-                <div>
-                    <a u=image href="#"><img src="../images/comarca/carousel/001.jpg" /></a>
-                </div>
-                <div>
-                    <a u=image href="#"><img src="../images/comarca/carousel/003.jpg" /></a>
-                </div>
-                <div>
-                    <a u=image href="#"><img src="../images/comarca/carousel/002.jpg" /></a>
-                </div>
-                <div>
-                    <a u=image href="#"><img src="../images/comarca/carousel/004.jpg" /></a>
-                </div>
-            </div>
-            <div u="navigator" class="jssorb01" style="top: 450px; right: 600px;">
-                <!-- bullet navigator item prototype -->
-                <div u="prototype"></div>
-            </div>
-            <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora05l" style="top: 220px; left: 8px;">
-            </span>
-            <!-- Arrow Right -->
-            <span u="arrowright" class="jssora05r" style="top: 220px; right: 8px;">
-            </span>
-            <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
-        </div>
-        <!-- Jssor Slider End -->
+<div id="fondoHeader"></div>
+
+<!-- PRESENTACION -->
+<section class="sections">
+    <div id="textoPresentacion">
+    	<span class="rotuloLogo">D</span><span class="plainTextWhitePlus">esde 1980 cuidando de nuestros huéspedes, haciendo que su estancia en nuestro hotel sea un placer a la altura de sus espectativas. En el corazón de la Comarca Oscos-Eo y con una situación privilegiada, nuestro hotel ha sido la referencia hostelera de Vegadeo, una responsabilidad que estamos dispuestos asumir desde la humildad y la experiencia que nos han dado los años.
+        </span>
     </div>
 </section>
 
 <!-- LINKS RAPIDOS -->
-<section class="sections fondoMedioIndex" style="margin-top:140px">
+<section class="sections fondoMedioBlancoIndex" style="margin-top:140px">
 	<div id="linksContainer">
         <div id="laBilbaina" class="link linkCenter">
           <a href="labilbaina.html" target="_self" style="text-decoration:none">
             <h2><span class="rotuloMedioNothingGray" style="color:#996600;">La Bilbaina</span></h2>
-            <div id="imgLaBilbaina" class="thumbnailsLinks bilbaina"></div>
+            <div id="imgLaBilbaina" class="thumbnailsLinks laBilbaina"></div>
           </a>
               <div class="changeColor">
-                <span class="plainText goldLinkSection">De como La Bilbaina se convirtió en el primer hotel de Vegadeo con ascensor, o de las celebridades que nos acompañaron en nuestra andadura.</span>
+                <span class="plainText grayLinkSection">De como La Bilbaina se convirtió en el primer hotel de Vegadeo con ascensor, o de las celebridades que nos acompañaron en nuestra andadura.</span>
               </div>
         </div>
         
@@ -225,17 +93,17 @@
               <div id="imgExperiencias" class="thumbnailsLinks experiencias"></div>
           </a>
           <div class="changeColor">
-              <span class="plainText goldLinkSection">La comarca Oscos-Eo permite al visitante disfrutar no solo de gran variedad de actividades outdoor sino de una amplia oferta gastronómica que hara disfrutar a los paladares más exigentes.</span>
+              <span class="plainText grayLinkSection">La comarca Oscos-Eo permite al visitante disfrutar no solo de gran variedad de actividades outdoor sino de una amplia oferta gastronómica que hara disfrutar a los paladares más exigentes.</span>
           </div>
         </div>
         
         <div id="vegadeo" class="link linkCenter" style="margin-right:0px">
           <a href="vegadeo.html" target="_self" style="text-decoration:none">
               <h2><span class="rotuloMedioNothingGray" style="color:#996600;">Vegadeo</span></h2>
-              <div id="imgLaMontana" class="thumbnailsLinks vegadeo"></div>
+              <div id="imgVegadeo" class="thumbnailsLinks vegadeo"></div>
           </a>
           <div class="changeColor">
-              <span class="plainText goldLinkSection">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio.</span>
+              <span class="plainText grayLinkSection">Conoce un poco de nuestra historia, de nuestro presente. Vegadeo abre sus puertas a los visitantes mostrandoles una gran oferta gastronómica, cultural y de ocio.</span>
           </div>
         </div>
         
@@ -245,7 +113,7 @@
               <div id="imgGaleria" class="thumbnailsLinks galeria"></div>
           </a>
           <div class="changeColor">
-              <span class="plainText goldLinkSection">Una imagen vale más que mil palabras, visita nuestras instalaciones y lo que podemos ofrecerte. Repetirás.</span>
+              <span class="plainText grayLinkSection">Una imagen vale más que mil palabras, visita nuestras instalaciones y lo que podemos ofrecerte. Repetirás.</span>
           </div>
         </div>
     </div>   
@@ -258,7 +126,7 @@
         <p>&nbsp;</p>
         <span class="plainTextWhitePlus">
         	Nos encontramos en el centro de <strong>Vegadeo</strong>, muy cerca del ayuntamiento y del pabellón de la <strong>Feria de Muestras de Vegadeo</strong>. Nuestra dirección es <strong>Plaza del Ayuntamiento, número 6, 33770. Vegadeo. Asturias</strong>.
-            <br>
+            <p>&nbsp;</p>
             Puedes hacer tu reserva en el siguiente número de teléfono: <strong>985 634 035</strong>.
             <br />
             O en nuestra dirección de correo electrónico <strong>info@hotellabilbaina.es</strong>.
@@ -268,6 +136,79 @@
 	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.80888457844!2d-7.049435299999999!3d43.464586999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3179020b7a19df%3A0xfeb9c198c1b1bac3!2sHotel+la+Bilbaina!5e0!3m2!1ses!2ses!4v1439319155182" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </section>
+
+<footer>
+	<div id="webMap" class="treeLinks">
+    	<div id="footerLinks">
+	        <div id="homeFooterLink">
+		       	<a href="index.html" target="_self"><span class="footerText">Home</span></a>
+        	</div>
+        </div>
+        <div id="footerLinks">
+        	<div id="labilbainaFooterLink">
+             	<a href="labilbaina.html" target="_self"><span class="footerText">La Bilbaina</span></a>
+            </div>
+        </div>
+        <div id="footerLinks">
+	       	<div id="experiencesFooterLink">
+           		<a href="experiencias.html" target="_self"><span class="footerText">Experiencias</span></a>
+			</div>
+            <div>&nbsp;</div>
+            <div id="experiencesMiniLinks" class="footerTextMenor">
+              	<a href="playa.html" target="_self">Playas</a><br />
+                <a href="montana.html" target="_self">Montaña</a><br />
+                <a href="comarca.html" target="_self">Comarca Oscos-Eo</a>
+	        </div>
+        </div>
+        <div id="footerLinks">
+        	<div id="galeriaFooterLink">
+            	<a href="galeria.html" target="_self"><span class="footerText">Galeria</span></a>
+            </div>
+            <div>&nbsp;</div>
+            <div id="galeriaMiniLinks" class="footerTextMenor">
+				<a href="elhotel.html" target="_self">El hotel</a><br />
+				<a href="habitaciones.html" target="_self">Habitaciones</a><br />
+                <a href="vegadeo.html" target="_self">Vegadeo</a>
+          </div>
+        </div>
+        <div id="footerLinks">
+        	<div id="contactFooterLink">
+				<a href="contacto.html" target="_self"><span class="footerText">Contacto</span></a>
+            </div>
+        </div>
+    </div>
+    
+  <div id="socialIconos" class="socialFooter">
+  		<div id="findUs"> <span class="footerText">Encu&eacute;ntranos en:</span> </div>
+  		<div class="	facebook">
+        	<a href="https://www.facebook.com/pages/Hotel-La-Bilbaina/124028204403916" title="Hotel La Bilbaina Vegadeo" target="_TOP">
+            	<img src="../content/images/social/facebook.png" width="130" height="40" alt=""/>
+            </a>
+        </div>
+  		<div id="tripAdvisor" class="tripAdvisor">
+            <a href="http://www.tripadvisor.es/Hotel_Review-g1080346-d2089956-Reviews-Hotel_La_Bilbaina-Vegadeo_Municipality_Asturias.html"
+            title="Hotel La Bilbaina Vegadeo" target="_blank">
+        		<img src="../content/images/social/tripadvisor.jpg" alt="tripAdvisor" width="50" height="50"/>
+            </a>
+         </div>
+  		
+  		<div id="googlePlus" class="googlePlus"> <img src="../content/images/social/googlePlus.png" width="50" height="50" alt=""/> </div>
+  </div>
+  <address>  
+      <div id="contactFooter" class="footerText">
+            Hotel La Bilbaina <br />
+            <span class="footerTextMenor">
+                Plaza del ayuntamiento 6, Vegadeo<br />
+                Asturias.<br />
+                Teléfono: 985 634 035
+                info@hotellabilbaina.es
+            </span>
+      </div>
+  </address>  
+    <div id="copyright">
+		<span class="footerTextMenor">Hotel La Bilbaina - Vegadeo. Todos los derechos reservados 2015 (C).</span>
+    </div>
+</footer>
 
 </body>
 </html>
