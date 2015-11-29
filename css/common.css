@@ -15,7 +15,7 @@ header
 {
 	width:100%;
 	background-color:#FFFFFF;
-	height:200px;
+	height:250px;
 	z-index:1;
 	position:absolute;
 }
@@ -240,26 +240,31 @@ body
 .montana
 {
 	background-image:url(../images/common/sectionLinks/riverCascade.jpg);
+	background-repeat:no-repeat;
 }
 
 .playa
 {
 	background-image:url(../images/common/sectionLinks/playaTapia.jpg);
+	background-repeat:no-repeat;
 }
 
 .vegadeo
 {
 	background-image:url(../images/common/sectionLinks/vegadeoChurch.jpg);
+	background-repeat:no-repeat;
 }
 
 .comarca
 {
 	background-image:url(../images/common/sectionLinks/sailingEo.jpg);
+	background-repeat:no-repeat;
 }
 
 .laBilbaina
 {
 	background-image:url(../images/common/sectionLinks/laBilbaina.jpg);
+	background-repeat:no-repeat;
 }
 
 .experiencias
@@ -312,6 +317,18 @@ body
 	float: right;
 	margin-top: 30px;
 }
+
+/*Estilos para botones*/
+/*.botonMasInfo
+{
+	border:solid;
+	border-color:#BCBCBC;
+	border-width: 2px;
+	
+	color:#996600;
+	border-radius: 2px 20px;
+}*/
+
 /*CAPAS DEL FOOTER*/
 footer
 {
@@ -331,7 +348,7 @@ footer
 	float: left;
 }
 
-#footerLinks
+.footerLinks
 {
 	z-index:1;
 	float:left;
@@ -353,6 +370,7 @@ footer
 	float:left;
 }
 
+/*TODO: Estos estilos se pueden reunir en uno solo*/
 .facebook
 {
 	float: right;
@@ -360,12 +378,6 @@ footer
 }
 
 .tripAdvisor
-{
-	float: right;
-	margin: 10px 10px 0px 0px;
-}
-
-.booking
 {
 	float: right;
 	margin: 10px 10px 0px 0px;
@@ -387,4 +399,15 @@ footer
 	margin: 50px 90px 0px 0px;
 	width: 300px;
 	float:right;
+}
+
+/*CONTROLES*/
+
+.botonMasInfo
+{
+	width:150px;
+	height:30px;
+	background-color:#996600;
+	border-radius: 10px;
+	padding:3px 2px 2px 30px;
 }

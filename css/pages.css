@@ -33,7 +33,7 @@
 	margin: 90px 0px 0px 0px;
 	
 	border:solid;
-	border-color:black;
+	border-color:rgba(255,254,254,1.0);
 	border-width:2px;
 }
 
@@ -45,31 +45,64 @@
 
 /*LA BILBAINA*/
 
-.fondoMedioBilbaina
-{
-	/*TODO: Cambiar imagen de fondo*/
-	background-image:url(../images/experiencias/shipsWater.jpg);
-	background-repeat: no-repeat;
-}
 
 /*EXPERIENCIAS*/
 
 .fondoMedioExperiencias
 {
 	/*TODO: Cambiar imagen de fondo*/
-	background-image:url(../images/experiencias/shipsWater.jpg);
+	background-image:url(../images/experiencias/puertoTapia.jpg);
 	background-repeat: no-repeat;
+}
+
+#centralText
+{
+	width:50%; 
+	height:100%; 
+	margin: -300px 20px 10px 20px;
+	padding: 20px 20px 20px 20px;
+	float:left; 
+	border-radius: 20px 20px 20px 20px;
+	background-color: rgba(47,47,48,0.8);
+}
+
+.expLinks
+{
+	width:300px; 
+	float:right; 
+	margin: -30px 30px 10px 10px;
+	height:500px;
+	background-color:#FFFFFF;
+	border:solid;
+	border-color:#FFFFFF;
+	border-radius: 20px;
+	padding: 200px 20px 0px 20px;
 }
 
 /*CONTACTO*/
 
-.fondoMedioContacto
+.contactoSocial
 {
-	/*TODO: Cambiar imagen de fondo*/
-	background-image:url(../images/experiencias/shipsWater.jpg);
-	background-repeat: no-repeat;
+	margin: 320px 0px 0px 20px;
+	width: 450px;
+	height: 220px;
 }
 
+#facebookWidget
+{
+	width:150px;
+	position:absolute;
+	border: solid; 
+	boder-color:#3B5998; 
+	border-width:2px;
+}
+
+#tripAdvisorWidget
+{
+	width: 250px;
+	float: right;
+	margin-left: 10px;
+}
 /*COMARCA*/
 
 .fondoMedioComarca
@@ -104,13 +137,26 @@
 
 /*GALERIA*/
 
-.fondoMedioGaleria
+.imgMiniatura
 {
-	/*TODO: Cambiar imagen de fondo*/
-	background-image:url(../images/experiencias/shipsWater.jpg);
-	background-repeat: no-repeat;
+	width:250px;
+	height:200px;
+	float: left;
+	border: solid;
+	color: #FFFFFF;
+	border-width: 2px;
+	margin: 10px 10px 10px 10px;
 }
 
+.subGallery
+{
+	margin:10px 20px 20px 10px;
+	padding: 10px 10px 10px 10px;
+}
 
-
+.galleries
+{
+	margin: 10px 0px 20px 130px;
+	width: 85%;
+}
 

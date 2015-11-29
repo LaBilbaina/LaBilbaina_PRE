@@ -61,6 +61,11 @@
 	font-family: 'Syncopate';
 }
 
+.sloganMini
+{
+	font-size:20px;
+}
+
 /*Titulos de cada seccion*/
 .rotuloSecciones
 {
@@ -88,6 +93,14 @@
 .rotuloMedioNothingGray
 {
 	color: #BFBFBF;
+	font-weight:bolder;	
+	font-family: 'Nothing You Could Do', sans-serif;
+	font-size:30px;
+}
+
+.rotuloMedioNothingWhite
+{
+	color: #FFFFFF;
 	font-weight:bolder;	
 	font-family: 'Nothing You Could Do', sans-serif;
 	font-size:30px;
@@ -129,7 +142,15 @@ strong
 	color:#996600;
 }
 
+/*TODO: verificae que este estio se usa.*/
 .sombra
 {
 	text-shadow: 1px 2px #999;
+}
+
+.textoBoton
+{
+	color:#FFFFFF;
+	font-family::'Josefin Sans';
+	font-size:12px;
 }
