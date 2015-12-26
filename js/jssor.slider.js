@@ -2632,7 +2632,7 @@ var $JssorSlider$ = window.$JssorSlider$ = function (elmt, options) {
 
     var _Options = $Jssor$.$Extend({
         $FillMode: 0,                   //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-        $LazyLoading: 1,                //[Optional] For image with  lazy loading format (<IMG src2="url" .../>), by default it will be loaded only when the slide comes.
+        $LazyLoading: 1,                //[Optional] For image with  lazy loading format (<IMG src2="url" .>), by default it will be loaded only when the slide comes.
         //But an integer value (maybe 0, 1, 2 or 3) indicates that how far of nearby slides should be loaded immediately as well, default value is 1.
         $StartIndex: 0,                 //[Optional] Index of slide to display when initialize, default value is 0
         $AutoPlay: false,               //[Optional] Whether to auto play, default value is false

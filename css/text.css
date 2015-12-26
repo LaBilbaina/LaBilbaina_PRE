@@ -30,6 +30,14 @@
 	font-weight:bold;
 }
 
+.goldTituloLateral
+{
+	color:#996600;
+	font-size:30px;
+	font-weight:bold;
+	font-family: 'Syncopate';
+}
+
 .grayLinkSection
 {
 	color:rgba(47,47,48,1);
@@ -123,7 +131,7 @@ a:link,a:visited,a:hover,a:active
 
 .footerText
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans';
 	font-size:14px;
 	font-weight:bold;
 	color:#000033;
@@ -151,6 +159,6 @@ strong
 .textoBoton
 {
 	color:#FFFFFF;
-	font-family::'Josefin Sans';
+	font-family:'Josefin Sans';
 	font-size:12px;
 }

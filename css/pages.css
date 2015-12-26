@@ -45,6 +45,10 @@
 
 /*LA BILBAINA*/
 
+.celdasMiniaturas
+{
+	margin: 20px 10px 10px 10px;
+}
 
 /*EXPERIENCIAS*/
 
@@ -69,8 +73,8 @@
 .expLinks
 {
 	width:300px; 
-	float:right; 
-	margin: -30px 30px 10px 10px;
+	float:left; 
+	margin: -3% 2% 1% 1%;
 	height:500px;
 	background-color:#FFFFFF;
 	border:solid;
